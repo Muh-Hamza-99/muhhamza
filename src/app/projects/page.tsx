@@ -44,7 +44,6 @@ const Projects = () => {
                     <Project
                         key={idx}
                         name={project.name}
-                        icon={project.icon}
                         description={project.description}
                         image={project.image}
                         url={project.url}
