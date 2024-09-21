@@ -75,7 +75,7 @@ export const CONFIG: Config = {
     ],
     description: (
         <>
-            Hi, I&apos;m Hamza. I was brought up in Saudi Arabia, am from Pakistan and am currently studying Computer Science at the University of Waterloo and
+            Hi, I&apos;m Hamza. I was brought up in Saudi Arabia and am from Pakistan. I am currently studying Computer Science at the University of Waterloo and
             am working part-time as a Software Engineer at{" "}
             <a
                 href="https://codeverseorg.netlify.app/"
@@ -88,7 +88,7 @@ export const CONFIG: Config = {
             .
         </>
     ),
-    descriptionRaw: `Hi, I'm Hamza. I was brought up in Saudi Arabia, am from Pakistan and am currently studying Computer Science at the University of Waterloo and am working part-time as a Software Engineer at Codeverse.`,
+    descriptionRaw: `Hi, I'm Hamza. I was brought up in Saudi Arabia and am from Pakistan. I am currently studying Computer Science at the University of Waterloo and am working part-time as a Software Engineer at Codeverse.`,
     experiences: [
         {
             name: "Software Engineer",
@@ -98,7 +98,6 @@ export const CONFIG: Config = {
             tags: [
                 { name: "TypeScript", icon: "typescript" },
                 { name: "Next", icon: "nextjs" },
-                { name: "SQLite", icon: "sqlite" },
                 { name: "GCP", icon: "gcp" },
                 { name: "PostgreSQL", icon: "postgresql" },
                 { name: "Nest", icon: "nestjs" },
@@ -150,7 +149,7 @@ export const CONFIG: Config = {
     projects: [ 
         {
             name: "UWScheduler",
-            image: "/images/uwscheduler.png",
+            image: "/images/uwaterloo.png",
             description:
                 "A tool to help UWaterloo students schedule their courses.",
             url: "https://uw-scheduler.netlify.app/",
