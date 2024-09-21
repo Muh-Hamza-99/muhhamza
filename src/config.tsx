@@ -41,6 +41,7 @@ type Config = {
         code: string
         name: string
         description: string
+        image?: string
         tags: {
             name: string
             icon: keyof typeof Icons
@@ -181,6 +182,7 @@ export const CONFIG: Config = {
             code: "CS 136",
             name: "Algorithm Design and Data Abstraction",
             description: "Essential concepts for computer science.",
+            image: "/images/uwaterloo.png",
             tags: [
                 { name: "C", icon: "c" },
             ],
@@ -190,6 +192,7 @@ export const CONFIG: Config = {
             code: "MATH 138",
             name: "Calculus II",
             description: "The next level calculus; in my opinion, the hardest of all the calculus courses I have taken.",
+            image: "/images/uwaterloo.png",
             tags: [],
             featured: false,
         },
@@ -197,6 +200,7 @@ export const CONFIG: Config = {
             code: "MATH 136",
             name: "Linear Algebra",
             description: "Simple and straightforward content to lay groundwork for a solid foundation in linear algebra.",
+            image: "/images/uwaterloo.png",
             tags: [
                 { name: "LaTeX", icon: "latex" }
             ],
@@ -206,6 +210,7 @@ export const CONFIG: Config = {
             code: "EARTH 122",
             name: "Introductory Environmental Sciences",
             description: "400+ slides of simple facts and information about the earth.",
+            image: "/images/uwaterloo.png",
             tags: [],
             featured: false,
         },
@@ -213,6 +218,7 @@ export const CONFIG: Config = {
             code: "CS 135",
             name: "Designing Functional Programs",
             description: "Introduction to functional programming with huge emphasis on recursion.",
+            image: "/images/uwaterloo.png",
             tags: [],
             featured: true,
         },
@@ -220,6 +226,7 @@ export const CONFIG: Config = {
             code: "MATH 137",
             name: "Calculus",
             description: "Highschool calculus, mainly about limits and derivatives.",
+            image: "/images/uwaterloo.png",
             tags: [],
             featured: false,
         },
@@ -227,6 +234,7 @@ export const CONFIG: Config = {
             code: "MATH 135",
             name: "Algebra",
             description: "The pillar behind all upcoming math courses, building essential foundational proof and proof-of-work concepts.",
+            image: "/images/uwaterloo.png",
             tags: [
                 { name: "LaTeX", icon: "latex" }
             ],
@@ -236,6 +244,7 @@ export const CONFIG: Config = {
             code: "ECON 101",
             name: "Microeconomics",
             description: "Basic concepts of microeconomics, from supply and demand to elasticity and price discrinmination.",
+            image: "/images/uwaterloo.png",
             tags: [],
             featured: false,
         },
@@ -243,6 +252,7 @@ export const CONFIG: Config = {
             code: "ENGL 109",
             name: "Academic Writing",
             description: "Learning to write narratives, argumentative essays and rhetorical analyses.",
+            image: "/images/uwaterloo.png",
             tags: [],
             featured: false,
         },

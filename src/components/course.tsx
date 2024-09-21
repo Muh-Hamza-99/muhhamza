@@ -11,11 +11,13 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+import Image from "next/image"
 
 interface CourseProps {
     code: string
     name: string
     description: string
+    image?: string
     tags: {
         name: string
         icon: keyof typeof Icons
@@ -27,6 +29,7 @@ const Course = ({
     code,
     name,
     description,
+    image,
     tags,
     notes,
 }: CourseProps) => {
@@ -35,6 +38,15 @@ const Course = ({
             <div className="flex flex-col gap-2">
                 <div className="flex items-start justify-between">
                     <div className="flex items-start gap-2">
+                        {image && (
+                            <Image
+                                src={image}
+                                width={64}
+                                height={64}
+                                alt="fds"
+                                className="h-12 w-auto shrink-0 rounded-md"
+                            />
+                        )}
                         <div>
                             <h3>{code} - {name}</h3>
                             <p className="text-sm text-muted-foreground">

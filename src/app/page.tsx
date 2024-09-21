@@ -80,6 +80,7 @@ export default function Home() {
                             key={idx}
                             code={course.code}
                             name={course.name}
+                            image={course.image}
                             description={course.description}
                             notes={course.notes}
                             tags={course.tags}                        
