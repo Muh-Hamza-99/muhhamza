@@ -74,9 +74,8 @@ export const CONFIG: Config = {
     ],
     description: (
         <>
-            Hi, I&apos;m Hamza from Pakistan. I am currently studying Computer Science at the University of Waterloo and
-            am working part-time as a Full-Stack
-            Software Engineer at{" "}
+            Hi, I&apos;m Hamza. I was brought up in Saudi Arabia, am from Pakistan and am currently studying Computer Science at the University of Waterloo and
+            am working part-time as a Software Engineer at{" "}
             <a
                 href="https://codeverseorg.netlify.app/"
                 target="_blank"
@@ -88,7 +87,7 @@ export const CONFIG: Config = {
             .
         </>
     ),
-    descriptionRaw: `Hi, I'm Muhammad Hamza from Pakistan. I am currently studying Computer Science at the University of Waterloo and am working part-time as a Full-Stack Software Engineer at Codeverse.`,
+    descriptionRaw: `Hi, I'm Hamza. I was brought up in Saudi Arabia, am from Pakistan and am currently studying Computer Science at the University of Waterloo and am working part-time as a Software Engineer at Codeverse.`,
     experiences: [
         {
             name: "Software Engineer",
