@@ -98,6 +98,8 @@ export const CONFIG: Config = {
             tags: [
                 { name: "TypeScript", icon: "typescript" },
                 { name: "Next", icon: "nextjs" },
+                { name: "SQLite", icon: "sqlite" },
+                { name: "GCP", icon: "gcp" },
                 { name: "PostgreSQL", icon: "postgresql" },
                 { name: "Nest", icon: "nestjs" },
             ],
@@ -185,6 +187,8 @@ export const CONFIG: Config = {
             image: "/images/uwaterloo.png",
             tags: [
                 { name: "C", icon: "c" },
+                { name: "Bash", icon: "bash" },
+                { name: "Git", icon: "git" },
             ],
             featured: true,
         },
