@@ -16,7 +16,6 @@ import Image from "next/image"
 interface CourseProps {
     code: string
     name: string
-    description: string
     image?: string
     tags: {
         name: string
@@ -28,7 +27,6 @@ interface CourseProps {
 const Course = ({
     code,
     name,
-    description,
     image,
     tags,
     notes,

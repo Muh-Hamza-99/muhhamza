@@ -14,10 +14,10 @@ import { CONFIG } from "@/config"
 import Course from "@/components/course"
 
 export const metadata = {
-    title: "Experiences",
+    title: "Courses",
 }
 
-const Experiences = () => {
+const Courses = () => {
     return (
         <div>
             <div className="flex animate-slide-from-down-and-fade-1 items-start justify-between">
@@ -46,7 +46,6 @@ const Experiences = () => {
                         code={course.code}
                         name={course.name}
                         image={course.image}
-                        description={course.description}
                         notes={course.notes}
                         tags={course.tags}
                     />
@@ -56,4 +55,4 @@ const Experiences = () => {
     )
 }
 
-export default Experiences
+export default Courses
