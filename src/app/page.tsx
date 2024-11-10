@@ -81,7 +81,6 @@ export default function Home() {
                             code={course.code}
                             name={course.name}
                             image={course.image}
-                            description={course.description}
                             notes={course.notes}
                             tags={course.tags}                        
                         />
