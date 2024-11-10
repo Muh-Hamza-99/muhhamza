@@ -48,9 +48,9 @@ const Course = ({
                             />
                         )}
                         <div>
-                            <h3>{code} - {name}</h3>
+                            <h3>{code}</h3>
                             <p className="text-sm text-muted-foreground">
-                                {description}
+                                {name}
                             </p>
                         </div>
                     </div>
@@ -82,6 +82,30 @@ const Course = ({
                                         </TooltipContent>
                                     </Tooltip>
                                 )}
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Button
+                                            asChild
+                                            size={"icon"}
+                                            variant={"ghost"}
+                                            className="shrink-0"
+                                        >
+                                            <Link
+                                                href={`https://uwflow.com/course/${code.toLowerCase().replace(" ", "")}`}
+                                                target="_blank"
+                                                aria-label={`Visit {code}`}
+                                            >
+                                                <Icons.externalLink className="size-4" />
+                                            </Link>
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent
+                                        side="bottom"
+                                        className="bg-transparent text-xs"
+                                    >
+                                        {`Visit ${code}`}
+                                    </TooltipContent>
+                                </Tooltip>
                             </TooltipProvider>
                         </div>
                 </div>
