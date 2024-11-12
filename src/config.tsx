@@ -71,6 +71,11 @@ export const CONFIG: Config = {
             url: "mailto:muhammad.hamzaasad@gmail.com",
             icon: "email",
         },
+        {
+            name: "Medium",
+            url: "https://medium.com/@muhammad.hamzaasad",
+            icon: "medium",
+        }
     ],
     description: (
         <>
@@ -89,6 +94,14 @@ export const CONFIG: Config = {
     ),
     descriptionRaw: `Hi, I'm Hamza. I was brought up in Saudi Arabia and am from Pakistan. I am currently studying Computer Science at the University of Waterloo and am working part-time as a Software Engineer at Codeverse.`,
     experiences: [
+        {
+            name: "Software Engineer",
+            image: "/images/nokia.jpeg",
+            description: "Automation and AI/ML. Incoming Winter 2025.",
+            url: "https://www.nokia.com/",
+            tags: [],
+            featured: true,
+        },
         {
             name: "Software Engineer",
             image: "/images/codeverse.jpeg",
@@ -115,10 +128,10 @@ export const CONFIG: Config = {
                 { name: "Flask", icon: "flask" },
                 { name: "MongoDB", icon: "mongodb" },
             ],
-            featured: true,
+            featured: false,
         },
         {
-            name: "Research and Software Intern",
+            name: "Business Analyst",
             image: "/images/twimbit.jpeg",
             description: "Carrying out research and automating the process.",
             url: "https://twimbit.com",
