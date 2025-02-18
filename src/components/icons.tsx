@@ -39,7 +39,8 @@ export const Icons = {
     aws: () => (<Image alt="aws" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=aws" />),
     gcp: () => (<Image alt="gcp" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=gcp" />),
     docker: () => (<Image alt="docker" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=docker" />),
-    git: () => (<Image alt="docker" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=git" />),
+    git: () => (<Image alt="git" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=git" />),
+    golang: () => (<Image alt="golang" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=golang" />),
     arrowUpRight: ArrowUpRight,
     star: Star,
 }

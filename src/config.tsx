@@ -79,25 +79,15 @@ export const CONFIG: Config = {
     ],
     description: (
         <>
-            Hi, I&apos;m Hamza. I was brought up in Saudi Arabia and am from Pakistan. I am currently studying Computer Science at the University of Waterloo and
-            am working part-time as a Software Engineer at{" "}
-            <a
-                href="https://codeverseorg.netlify.app/"
-                target="_blank"
-                className="whitespace-nowrap font-medium text-foreground underline decoration-muted-foreground underline-offset-2"
-            >
-                 Codeverse
-                <Icons.arrowUpRight className="inline-block size-4" />
-            </a>
-            .
+            Hi, I&apos;m Hamza. Studying Computer Science at the University of Waterloo. Currently interning @ Nokia.
         </>
     ),
-    descriptionRaw: `Hi, I'm Hamza. I was brought up in Saudi Arabia and am from Pakistan. I am currently studying Computer Science at the University of Waterloo and am working part-time as a Software Engineer at Codeverse.`,
+    descriptionRaw: `Hi, I'm Hamza. Studying Computer Science at the University of Waterloo. Currently interning @ Nokia.`,
     experiences: [
         {
-            name: "Software Engineer",
+            name: "Automation and AI/ML Developer",
             image: "/images/nokia.jpeg",
-            description: "Automation and AI/ML. Incoming Winter 2025.",
+            description: "Cloud network services.",
             url: "https://www.nokia.com/",
             tags: [],
             featured: true,
@@ -111,24 +101,8 @@ export const CONFIG: Config = {
                 { name: "TypeScript", icon: "typescript" },
                 { name: "Next", icon: "nextjs" },
                 { name: "GCP", icon: "gcp" },
-                { name: "PostgreSQL", icon: "postgresql" },
-                { name: "Nest", icon: "nestjs" },
             ],
             featured: true,
-        },
-        {
-            name: "Software Engineer",
-            image: "/images/uwplanr.png",
-            description: "Building a tool to help students at the University of Waterloo plan their courses.",
-            url: "https://uwplanr.netlify.app",
-            tags: [
-                { name: "TypeScript", icon: "typescript" },
-                { name: "React", icon: "react" },
-                { name: "Python", icon: "python" },
-                { name: "Flask", icon: "flask" },
-                { name: "MongoDB", icon: "mongodb" },
-            ],
-            featured: false,
         },
         {
             name: "Business Analyst",
@@ -158,7 +132,50 @@ export const CONFIG: Config = {
             featured: false,
         }
     ],
-    projects: [ 
+    projects: [
+        {
+            name: "Partial",
+            image: "/images/partial.jpeg",
+            description:
+                "A Chrome extension to fill in job applications for you. Didn't finish.",
+            url: "https://github.com/Muh-Hamza-99/partial",
+            tags: [
+                { name: "TypeScript", icon: "typescript" },
+                { name: "React", icon: "react" },
+                { name: "Nest.js", icon: "nestjs" },
+                { name: "PostgreSQL", icon: "postgresql" },
+                { name: "AWS", icon: "aws" },
+                { name: "Go", icon: "golang" },
+            ],
+            featured: true,
+        },
+        {
+            name: "Biquadris",
+            image: "/images/biquadris.png",
+            description:
+                "A latinization of Tetris.",
+            url: "https://github.com/Muh-Hamza-99/biquadris",
+            tags: [
+                { name: "C++", icon: "cplusplus" },
+                { name: "Bash", icon: "bash" },
+            ],
+            featured: true,
+        },
+        {
+            name: "UWPlanr",
+            image: "/images/uwplanr.png",
+            description:
+                "A tool to help students at the University of Waterloo plan their courses.",
+            url: "https://uwplanr.netlify.app/",
+            tags: [
+                { name: "TypeScript", icon: "typescript" },
+                { name: "React", icon: "react" },
+                { name: "Python", icon: "python" },
+                { name: "Flask", icon: "flask" },
+                { name: "MongoDB", icon: "mongodb" },
+            ],
+            featured: true,
+        },
         {
             name: "UWScheduler",
             image: "/images/uwaterloo.png",
@@ -169,8 +186,8 @@ export const CONFIG: Config = {
                 { name: "TypeScript", icon: "typescript" },
                 { name: "React", icon: "react" },
             ],
-            featured: true,
-            github: "https://github.com/Muh-Hamza-99/uw-scheduler"
+            featured: false,
+            github: "https://github.com/Muh-Hamza-99/uw-schedule-planner",
         },
         {
             name: "Stock Price Prediction",
@@ -186,8 +203,22 @@ export const CONFIG: Config = {
                 { name: "PostgreSQL", icon: "postgresql" },
                 { name: "Python", icon: "python" },
             ],
-            featured: true,
+            featured: false,
             github: "https://github.com/Muh-Hamza-99/stock-prediction-app",
+        },
+        {
+            name: "Wudroid",
+            description:
+                "A Discord bot for a personal server. Includes music player, money system, permission-based commands, etc.",
+            image: "/images/discord.png",
+            url: "https://github.com/Muh-Hamza-99/wudroid",
+            tags: [
+                { name: "JavaScript", icon: "javascript" },
+                { name: "Node.js", icon: "nodejs" },
+                { name: "MongoDB", icon: "mongodb" },
+            ],
+            featured: false,
+            github: "https://github.com/Muh-Hamza-99/wudroid",
         }
     ],
     courses: [
