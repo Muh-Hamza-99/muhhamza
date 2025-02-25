@@ -95,7 +95,7 @@ export const CONFIG: Config = {
         {
             name: "Software Engineer",
             image: "/images/codeverse.jpeg",
-            description: "Helping foster STEM-based learning in Saudi Arabia.",
+            description: "Developed an SEO-optimized landing page with an admin panel using Next.js and SQLite, along with a email database with Google Cloud Platform (Google Sheets).",
             url: "https://codeverseorg.netlify.app",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -107,12 +107,11 @@ export const CONFIG: Config = {
         {
             name: "Business Analyst",
             image: "/images/twimbit.jpeg",
-            description: "Carrying out research and automating the process.",
+            description: "Researched 35+ companies, providing strategic insights to clients. Developed a Python and PostgreSQL automation tool that cut dossier creation time by 90% and integrated LLMs, e.g.: GPT-4 and Gemini, to streamline content generation.",
             url: "https://twimbit.com",
             tags: [
                 { name: "Python", icon: "python" },
                 { name: "PostgreSQL", icon: "postgresql" },
-                { name: "AWS", icon: "aws" },
                 { name: "Docker", icon: "docker" },
             ],
             featured: true,
@@ -120,7 +119,7 @@ export const CONFIG: Config = {
         {
             name: "Coding Instructor",
             image: "/images/createch.jpeg",
-            description: "Teaching students at MRIS about programming and produce management.",
+            description: "Led an 8-week program training 40+ students in technical development and project management. Launched a collaborative initiative where teams built and maintained websites for businesses in Riyadh.",
             url: "",
             tags: [
                 { name: "HTML", icon: "html" },
@@ -137,7 +136,7 @@ export const CONFIG: Config = {
             name: "Partial",
             image: "/images/partial.jpeg",
             description:
-                "A Chrome extension to fill in job applications for you. Didn't finish.",
+                "Developed a Golang and Redis mailing service using concurrency along with an email editor. Built a full-stack app using React, Nest.js, and PostgreSQL. Created a Chrome extension with JavaScript and conducted EDA on job application platforms. Didn't finish.",
             url: "https://github.com/Muh-Hamza-99/partial",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -153,11 +152,12 @@ export const CONFIG: Config = {
             name: "Biquadris",
             image: "/images/biquadris.png",
             description:
-                "A latinization of Tetris.",
+                "Developed a latinized version of Tetris in C++ using strong OOP principles. Created testing scripts with Bash. Worked with a team, utilizing Git for version control.",
             url: "https://github.com/Muh-Hamza-99/biquadris",
             tags: [
                 { name: "C++", icon: "cplusplus" },
                 { name: "Bash", icon: "bash" },
+                { name: "Git", icon: "git" }
             ],
             featured: true,
         },
@@ -165,7 +165,7 @@ export const CONFIG: Config = {
             name: "UWPlanr",
             image: "/images/uwplanr.png",
             description:
-                "A tool to help students at the University of Waterloo plan their courses.",
+                "Built a Flask server to serve and structure course data from the UW API, storing it in MongoDB. Automated 70-80% of course parsing using RegEx, Python, and Selenium, integrating it with a React UI. Attracted 2,500+ visits during MVP launch.",
             url: "https://uwplanr.netlify.app/",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -180,7 +180,7 @@ export const CONFIG: Config = {
             name: "UWScheduler",
             image: "/images/uwaterloo.png",
             description:
-                "A tool to help UWaterloo students schedule their courses.",
+                "Developed a course scheduling app for UW students via a user-friendly interface using TypeScript and React. Conducted A/B testing to validate the concept, gathering feedback that led to 10+ bug fixes and improvements.",
             url: "https://uw-scheduler.netlify.app/",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -192,7 +192,7 @@ export const CONFIG: Config = {
         {
             name: "Stock Price Prediction",
             description:
-                "An app to predict stock prices using SVMs through an interface for managing keys and requests.",
+                "Trained SVM models using SKLearn to improve accuracy and reduce overfitting for 200+ stocks. Built a RESTful API with Express and PostgreSQL, enabling data persistence and a user dashboard for tracking API requests and keys.",
             image: "/images/stockpredictionapp.jpeg",
             url: "https://github.com/Muh-Hamza-99/stock-prediction-app",
             tags: [
@@ -206,25 +206,11 @@ export const CONFIG: Config = {
             featured: false,
             github: "https://github.com/Muh-Hamza-99/stock-prediction-app",
         },
-        {
-            name: "Wudroid",
-            description:
-                "A Discord bot for a personal server. Includes music player, money system, permission-based commands, etc.",
-            image: "/images/discord.png",
-            url: "https://github.com/Muh-Hamza-99/wudroid",
-            tags: [
-                { name: "JavaScript", icon: "javascript" },
-                { name: "Node.js", icon: "nodejs" },
-                { name: "MongoDB", icon: "mongodb" },
-            ],
-            featured: false,
-            github: "https://github.com/Muh-Hamza-99/wudroid",
-        }
     ],
     courses: [
         {
-            code: "CS 246",
-            name: "Object-Oriented Software Development",
+            code: "2A",
+            name: "CS 246 • CS 245 • STAT 230 • ECON 201 • SI 121R",
             image: "/images/uwaterloo.png",
             tags: [
                 { name: "C++", icon: "cplusplus" },
@@ -234,36 +220,8 @@ export const CONFIG: Config = {
             featured: true,
         },
         {
-            code: "CS 245",
-            name: "Logic and Computation",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "STAT 230",
-            name: "Probability",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "ECON 201",
-            name: "Microeconomic Theory I",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "SI 121R",
-            name: "Islam in the World",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "CS 136",
-            name: "Algorithm Design and Data Abstraction",
+            code: "1B",
+            name: "CS 136 • MATH 138 • MATH 136 • EARTH 122",
             image: "/images/uwaterloo.png",
             tags: [
                 { name: "C", icon: "c" },
@@ -273,64 +231,20 @@ export const CONFIG: Config = {
             featured: true,
         },
         {
-            code: "MATH 138",
-            name: "Calculus II",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "MATH 136",
-            name: "Linear Algebra I",
-            image: "/images/uwaterloo.png",
+            code: "Machine Learning Specialization",
+            name: "Regression, classification, artifical neural networks and basic unsupervised techniques.",
+            image: "/images/deeplearning.jpeg",
             tags: [
-                { name: "LaTeX", icon: "latex" }
+                { name: "Python", icon: "python" },
             ],
             featured: false,
         },
         {
-            code: "EARTH 122",
-            name: "Introductory Environmental Sciences",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "CS 135",
-            name: "Designing Functional Programs",
+            code: "1A",
+            name: "CS 135 • MATH 137 • MATH 135 • ECON 101 • ENGL 109",
             image: "/images/uwaterloo.png",
             tags: [],
             featured: true,
-        },
-        {
-            code: "MATH 137",
-            name: "Calculus I",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "MATH 135",
-            name: "Algebra",
-            image: "/images/uwaterloo.png",
-            tags: [
-                { name: "LaTeX", icon: "latex" }
-            ],
-            featured: false,
-        },
-        {
-            code: "ECON 101",
-            name: "Microeconomics",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
-        },
-        {
-            code: "ENGL 109",
-            name: "Academic Writing",
-            image: "/images/uwaterloo.png",
-            tags: [],
-            featured: false,
         },
     ]
 }
