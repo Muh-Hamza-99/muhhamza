@@ -79,55 +79,51 @@ export const CONFIG: Config = {
     ],
     description: (
         <>
-            Hi, I&apos;m Hamza. Studying Computer Science at the University of Waterloo. Currently interning @ Nokia.
+            Hi, I&apos;m Hamza. Studying Computer Science at the University of Waterloo.
         </>
     ),
-    descriptionRaw: `Hi, I'm Hamza. Studying Computer Science at the University of Waterloo. Currently interning @ Nokia.`,
+    descriptionRaw: `Hi, I'm Hamza. Studying Computer Science at the University of Waterloo.`,
     experiences: [
         {
-            name: "Automation and AI/ML Developer",
+            name: "Software Developer",
             image: "/images/nokia.jpeg",
-            description: "Cloud network services.",
+            description: "Software development kit for Nokia's next generation of autonomous networks.",
             url: "https://www.nokia.com/",
-            tags: [],
+            tags: [
+                { name: "JavaScript", icon: "javascript" },
+                { name: "React.js", icon: "react" },
+                { name: "Kubernetes", icon: "kubernetes" },
+                { name: "FastAPI", icon: "fastapi" },
+            ],
             featured: true,
         },
         {
             name: "Software Engineer",
             image: "/images/codeverse.jpeg",
-            description: "Developed an SEO-optimized landing page with an admin panel using Next.js and SQLite, along with a email database with Google Cloud Platform (Google Sheets).",
+            description: "Website for increasing Codeverse's online presence.",
             url: "https://codeverseorg.netlify.app",
             tags: [
-                { name: "TypeScript", icon: "typescript" },
-                { name: "Next", icon: "nextjs" },
-                { name: "GCP", icon: "gcp" },
+                { name: "Next.js", icon: "nextjs" },
             ],
             featured: true,
         },
         {
             name: "Business Analyst",
             image: "/images/twimbit.jpeg",
-            description: "Researched 35+ companies, providing strategic insights to clients. Developed a Python and PostgreSQL automation tool that cut dossier creation time by 90% and integrated LLMs, e.g.: GPT-4 and Gemini, to streamline content generation.",
+            description: "Dossier creation and document automation tool for dossier creation.",
             url: "https://twimbit.com",
             tags: [
                 { name: "Python", icon: "python" },
                 { name: "PostgreSQL", icon: "postgresql" },
-                { name: "Docker", icon: "docker" },
             ],
             featured: true,
         },
         {
             name: "Coding Instructor",
             image: "/images/createch.jpeg",
-            description: "Led an 8-week program training 40+ students in technical development and project management. Launched a collaborative initiative where teams built and maintained websites for businesses in Riyadh.",
+            description: "Taught lessons about coding to a cohort of students.",
             url: "",
-            tags: [
-                { name: "HTML", icon: "html" },
-                { name: "CSS", icon: "css" },
-                { name: "JavaScript", icon: "javascript" },
-                { name: "React", icon: "react" },
-                { name: "Node.js", icon: "nodejs" },
-            ],
+            tags: [],
             featured: false,
         }
     ],
@@ -135,8 +131,7 @@ export const CONFIG: Config = {
         {
             name: "Partial",
             image: "/images/partial.jpeg",
-            description:
-                "Developed a Golang and Redis mailing service using concurrency along with an email editor. Built a full-stack app using React, Nest.js, and PostgreSQL. Created a Chrome extension with JavaScript and conducted EDA on job application platforms. Didn't finish.",
+            description: "A Chrome extension to autofill job applications. Didn't finish.",
             url: "https://github.com/Muh-Hamza-99/partial",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -151,8 +146,7 @@ export const CONFIG: Config = {
         {
             name: "Biquadris",
             image: "/images/biquadris.png",
-            description:
-                "Developed a latinized version of Tetris in C++ using strong OOP principles. Created testing scripts with Bash. Worked with a team, utilizing Git for version control.",
+            description: "A latinized version of Tetris using strong OOP principles.",
             url: "https://github.com/Muh-Hamza-99/biquadris",
             tags: [
                 { name: "C++", icon: "cplusplus" },
@@ -164,8 +158,7 @@ export const CONFIG: Config = {
         {
             name: "UWPlanr",
             image: "/images/uwplanr.png",
-            description:
-                "Built a Flask server to serve and structure course data from the UW API, storing it in MongoDB. Automated 70-80% of course parsing using RegEx, Python, and Selenium, integrating it with a React UI. Attracted 2,500+ visits during MVP launch.",
+            description: "A course planner for the University of Waterloo students.",
             url: "https://uwplanr.netlify.app/",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -180,7 +173,7 @@ export const CONFIG: Config = {
             name: "UWScheduler",
             image: "/images/uwaterloo.png",
             description:
-                "Developed a course scheduling app for UW students via a user-friendly interface using TypeScript and React. Conducted A/B testing to validate the concept, gathering feedback that led to 10+ bug fixes and improvements.",
+                "A course scheduling app for University of Waterloo students.",
             url: "https://uw-scheduler.netlify.app/",
             tags: [
                 { name: "TypeScript", icon: "typescript" },
@@ -192,7 +185,7 @@ export const CONFIG: Config = {
         {
             name: "Stock Price Prediction",
             description:
-                "Trained SVM models using SKLearn to improve accuracy and reduce overfitting for 200+ stocks. Built a RESTful API with Express and PostgreSQL, enabling data persistence and a user dashboard for tracking API requests and keys.",
+                "A full-stack S&P500 stock prediction API with managed API keys.",
             image: "/images/stockpredictionapp.jpeg",
             url: "https://github.com/Muh-Hamza-99/stock-prediction-app",
             tags: [

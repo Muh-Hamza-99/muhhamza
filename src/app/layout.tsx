@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Ubuntu } from "next/font/google"
+import { Fira_Code, Ubuntu } from "next/font/google"
 
 import Contact from "@/components/contact"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 import "./globals.css"
 
-const font = Ubuntu({
+const font = Fira_Code({
     subsets: ["latin"],
     weight: ["300", "400", "500", "700"],
 })

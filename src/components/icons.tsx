@@ -41,6 +41,8 @@ export const Icons = {
     docker: () => (<Image alt="docker" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=docker" />),
     git: () => (<Image alt="git" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=git" />),
     golang: () => (<Image alt="golang" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=golang" />),
+    kubernetes: () => (<Image alt="kubernetes" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=kubernetes" />),
+    fastapi: () => (<Image alt="fastapi" className="mr-1" width={17} height={17} src="https://skillicons.dev/icons?i=fastapi" />),
     arrowUpRight: ArrowUpRight,
     star: Star,
 }
