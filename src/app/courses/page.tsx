@@ -47,7 +47,6 @@ const Courses = () => {
                         name={course.name}
                         image={course.image}
                         notes={course.notes}
-                        tags={course.tags}
                     />
                 ))}
             </div>
