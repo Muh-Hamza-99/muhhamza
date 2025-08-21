@@ -3,8 +3,6 @@ import Link from "next/link"
 import React from "react"
 
 import { Icons } from "@/components/icons"
-import { ReadMore } from "@/components/read-more"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
@@ -19,10 +17,6 @@ interface ExperienceProps {
     description: string
     image?: string
     url: string
-    tags: {
-        name: string
-        icon: keyof typeof Icons
-    }[]
     testimonial?: string
     github?: string
 }
@@ -32,8 +26,6 @@ const Experience = ({
     description,
     image,
     url,
-    tags,
-    testimonial,
     github,
 }: ExperienceProps) => {
     return (
@@ -114,29 +106,6 @@ const Experience = ({
                         </div>
                     )}
                 </div>
-
-                <div>
-                    {tags && (
-                        <ul className="mt-2 flex flex-wrap gap-1">
-                            {tags.map((tag, idx) => {
-                                const Icon = Icons[tag.icon]
-                                return (
-                                    <li key={idx}>
-                                        <Badge variant={"outline"}>
-                                            <Icon className="mr-1.5 h-3 w-3" />{" "}
-                                            {tag.name}
-                                        </Badge>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    )}
-                </div>
-                {testimonial && (
-                    <blockquote className="border-l-2 pl-6 text-sm italic text-muted-foreground">
-                        <ReadMore text={testimonial} id="d" />
-                    </blockquote>
-                )}
             </div>
         </Card>
     )

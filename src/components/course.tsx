@@ -2,7 +2,6 @@ import Link from "next/link"
 import React from "react"
 
 import { Icons } from "@/components/icons"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
@@ -17,10 +16,6 @@ interface CourseProps {
     code: string
     name: string
     image?: string
-    tags: {
-        name: string
-        icon: keyof typeof Icons
-    }[]
     notes?: string
 }
 
@@ -28,7 +23,6 @@ const Course = ({
     code,
     name,
     image,
-    tags,
     notes,
 }: CourseProps) => {
     return (
@@ -106,24 +100,6 @@ const Course = ({
                                 </Tooltip>
                             </TooltipProvider>
                         </div>
-                </div>
-
-                <div>
-                    {tags && (
-                        <ul className="mt-2 flex flex-wrap gap-1">
-                            {tags.map((tag, idx) => {
-                                const Icon = Icons[tag.icon]
-                                return (
-                                    <li key={idx}>
-                                        <Badge variant={"outline"}>
-                                            <Icon className="mr-1.5 h-3 w-3 transition-all group-hover:saturate-100 md:saturate-0" />{" "}
-                                            {tag.name}
-                                        </Badge>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    )}
                 </div>
             </div>
         </Card>

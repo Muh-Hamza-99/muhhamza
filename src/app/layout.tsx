@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Fira_Code, Ubuntu } from "next/font/google"
+import { Lexend } from "next/font/google"
 
 import Contact from "@/components/contact"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils"
 
 import "./globals.css"
 
-const font = Fira_Code({
+const font = Lexend({
     subsets: ["latin"],
-    weight: ["300", "400", "500", "700"],
+    weight: ["300", "400", "700"],
 })
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <html lang="en" suppressHydrationWarning>
                 <head></head>
                 <body
-                    className="min-h-screen bg-background from-[#43434330] via-[#32323230] via-25% font-sans antialiased dark:bg-gradient-to-b"
+                    className="min-h-screen bg-background from-[#43434330] via-[#32323230] via-25% font-sans antialiased dark:bg-gradient-to-b lowercase"
                 >
                     <ThemeProvider
                         attribute="class"

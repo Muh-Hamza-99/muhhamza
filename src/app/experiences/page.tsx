@@ -47,8 +47,6 @@ const Experiences = () => {
                         description={project.description}
                         image={project.image}
                         url={project.url}
-                        tags={project.tags}
-                        testimonial={project.testimonial}
                     />
                 ))}
             </div>
