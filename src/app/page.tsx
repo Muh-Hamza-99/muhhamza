@@ -29,8 +29,6 @@ export default function Home() {
                             description={experience.description}
                             image={experience.image}
                             url={experience.url}
-                            tags={experience.tags}
-                            testimonial={experience.testimonial}
                         />
                     ))}
                 <Button
@@ -55,8 +53,6 @@ export default function Home() {
                             description={project.description}
                             image={project.image}
                             url={project.url}
-                            tags={project.tags}
-                            testimonial={project.testimonial}
                             github={project.github}
                         />
                     ))}
@@ -82,7 +78,6 @@ export default function Home() {
                             name={course.name}
                             image={course.image}
                             notes={course.notes}
-                            tags={course.tags}                        
                         />
                     ))}
                 <Button
