@@ -108,6 +108,13 @@ export const CONFIG: Config = {
     ],
     projects: [
         {
+            name: "Deframe",
+            image: "/images/deframe.png",
+            description: "AI agent for deframing biases in headlines.",
+            url: "https://www.deframe.ai",
+            featured: true,
+        },
+        {
             name: "_stoicvalues",
             image: "/images/stoicvalues.jpg",
             description: "Automated IG bot for stoic reels.",
@@ -119,7 +126,7 @@ export const CONFIG: Config = {
             image: "/images/partial.jpeg",
             description: "A Chrome extension to autofill job applications. Didn't finish.",
             url: "https://github.com/Muh-Hamza-99/partial",
-            featured: true,
+            featured: false,
         },
         {
             name: "Biquadris",
