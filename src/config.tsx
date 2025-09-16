@@ -78,6 +78,13 @@ export const CONFIG: Config = {
             featured: true,
         },
         {
+            name: "Founder",
+            image: "/images/budgie.png",
+            description: "budgie makes software to help.",
+            url: "https://trybudgie.netlify.app",
+            featured: true,
+        },
+        {
             name: "Software Developer",
             image: "/images/nokia.jpeg",
             description: "Worked on SDK for autonomous networks.",
@@ -89,7 +96,7 @@ export const CONFIG: Config = {
             image: "/images/codeverse.jpeg",
             description: "Created landing page for Codeverse.",
             url: "https://codeverseorg.netlify.app",
-            featured: true,
+            featured: false,
         },
         {
             name: "Business Analyst",
