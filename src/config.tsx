@@ -80,7 +80,7 @@ export const CONFIG: Config = {
         {
             name: "Founder",
             image: "/images/budgie.png",
-            description: "budgie makes software to help.",
+            description: "making a flock of software.",
             url: "https://trybudgie.netlify.app",
             featured: true,
         },
