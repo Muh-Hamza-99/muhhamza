@@ -34,12 +34,12 @@ export default function BlogPostPage({ params }: { params: Params }) {
                 </div>
             </header>
 
-            <div className='mb-8 border-b border-border pb-4'>
+            <div className='px-4 animate-slide-from-down-and-fade-1 mb-8 border-b border-border pb-4'>
                 <h1 className='mt-4 text-3xl font-bold'>{name}</h1>
                 <p className='mt-2 text-lg text-muted-foreground'>{description}</p>
             </div>
 
-            <article className='prose prose-neutral dark:prose-invert max-w-none prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-code:text-primary prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:border prose-pre:border-border'>
+            <article className='animate-slide-from-down-and-fade-1 prose prose-neutral dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-code:text-primary prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:border prose-pre:border-border'>
                 <MDXRemote source={content} components={mdxComponents} />
             </article>
         </div>

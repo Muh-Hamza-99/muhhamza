@@ -3,6 +3,9 @@ import Link from 'next/link'
 import { ComponentPropsWithoutRef } from 'react'
 
 const mdxComponents = {
+  wrapper: ({ children }: { children: React.ReactNode }) => (
+    <div className="mx-4">{children}</div>
+  ),
   h1: (props: ComponentPropsWithoutRef<'h1'>) => (
     <h1 className="text-4xl font-medium mt-8 mb-4" {...props} />
   ),
