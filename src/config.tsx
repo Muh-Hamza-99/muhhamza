@@ -1,4 +1,4 @@
-import { Icons } from "@/components/icons"
+import { Icons } from '@/components/icons'
 
 type Config = {
     name: string
@@ -12,184 +12,96 @@ type Config = {
     }[]
     description: string | JSX.Element
     descriptionRaw: string
-    experiences: {
-        name: string
-        image?: string
-        description: string
-        url: string
-        featured: boolean
-    }[]
-    projects: {
-        name: string
-        image: string
-        description: string
-        url: string
-        github?: string
-        featured: boolean
-    }[]
-    courses: {
-        code: string
-        image?: string
-        name: string
-        featured: boolean
-        notes?: string
-    }[]
+    experiences: Record<string, Experience>
+    projects: Record<string, Project>
 }
 
+
+
 export const CONFIG: Config = {
-    name: "Muhammad Hamza",
-    avatar: "/images/author.png",
-    title: "CS @ UWaterloo",
-    siteUrl: "https://muhhamza.netlify.app/",
+    name: 'Muhammad Hamza',
+    avatar: '/images/author.png',
+    title: 'CS @ UWaterloo',
+    siteUrl: 'https://muhhamza.netlify.app/',
     socials: [
         {
-            name: "GitHub",
-            url: "https://github.com/Muh-Hamza-99",
-            icon: "github",
+            name: 'GitHub',
+            url: 'https://github.com/Muh-Hamza-99',
+            icon: 'github',
         },
         {
-            name: "LinkedIn",
-            url: "https://www.linkedin.com/in/hamzaasad/",
-            icon: "linkedin",
+            name: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/hamzaasad/',
+            icon: 'linkedin',
         },
         {
-            name: "muhammad.hamzaasad@gmail.com",
-            url: "mailto:muhammad.hamzaasad@gmail.com",
-            icon: "email",
+            name: 'muhammad.hamzaasad@gmail.com',
+            url: 'mailto:muhammad.hamzaasad@gmail.com',
+            icon: 'email',
         },
-        {
-            name: "Medium",
-            url: "https://medium.com/@muhammad.hamzaasad",
-            icon: "medium",
-        }
     ],
     description: (
-        <>
-            Hi, I&apos;m Hamza. Studying CS at UWaterloo. Software Engineer.
-        </>
+        <>Hi, I&apos;m Hamza. Studying CS at UWaterloo. Software Engineer.</>
     ),
     descriptionRaw: `Hi, I'm Hamza. Studying CS at UWaterloo. Software Engineer.`,
-    experiences: [
-        {
-            name: "Software Developer",
-            image: "/images/vidyard.jpeg",
-            description: "Working on AI avatars and main Chrome extension.",
-            url: "https://www.vidyard.com/",
-            featured: true,
+    experiences: {
+        "vidyard": {
+            name: 'Software Developer',
+            image: '/images/vidyard.jpeg',
+            description: 'Working on AI avatars and main Chrome extension.',
+            content: `work in progress...`
         },
-        {
-            name: "Founder",
-            image: "/images/budgie.png",
-            description: "making a flock of software.",
-            url: "https://trybudgie.netlify.app",
-            featured: true,
+        "budgie": {
+            name: '53 65 63 72 65 74',
+            image: '/images/budgie.png',
+            description: 'making a flock of software.',
+            content: `work in progress...`
         },
-        {
-            name: "Software Developer",
-            image: "/images/nokia.jpeg",
-            description: "Worked on SDK for autonomous networks.",
-            url: "https://www.nokia.com/",
-            featured: true,
+        "nokia": {
+            name: 'Software Developer',
+            image: '/images/nokia.jpeg',
+            description: 'Worked on SDK for autonomous networks.',
+            content: `work in progress...`
         },
-        {
-            name: "Software Engineer",
-            image: "/images/codeverse.jpeg",
-            description: "Created landing page for Codeverse.",
-            url: "https://codeverseorg.netlify.app",
-            featured: false,
+        "codeverse": {
+            name: 'Software Engineer',
+            image: '/images/codeverse.jpeg',
+            description: 'Dossier creation and document automation tool.',
+            content: `work in progress...`
         },
-        {
-            name: "Business Analyst",
-            image: "/images/twimbit.jpeg",
-            description: "Dossier creation and document automation tool.",
-            url: "https://twimbit.com",
-            featured: false,
+        "twimbit": {
+            name: 'Business Analyst',
+            image: '/images/twimbit.jpeg',
+            description: 'Dossier creation and document automation tool.',
+            content: `work in progress...`
         },
-        {
-            name: "Coding Instructor",
-            image: "/images/createch.jpeg",
-            description: "Taught lessons about coding to a cohort of students.",
-            url: "",
-            featured: false,
-        }
-    ],
-    projects: [
-        {
-            name: "Deframe",
-            image: "/images/deframe.png",
-            description: "AI agent for deframing biases in headlines.",
-            url: "https://www.deframe.ai",
-            featured: true,
+    },
+    projects: {
+        "deframe": {
+            name: 'Deframe',
+            image: '/images/deframe.png',
+            description: 'AI agent for deframing biases in headlines.',
+            content: `work in progress...`
         },
-        {
-            name: "_stoicvalues",
-            image: "/images/stoicvalues.jpg",
-            description: "Automated IG bot for stoic reels.",
-            url: "https://www.instagram.com/_stoicvalues/",
-            featured: true,
+        "_stoicvalues": {
+            name: '_stoicvalues',
+            image: '/images/stoicvalues.jpg',
+            description: 'Automated IG bot for stoic reels.',
+            content: `work in progress...`
         },
-        {
-            name: "Partial",
-            image: "/images/partial.jpeg",
-            description: "A Chrome extension to autofill job applications. Didn't finish.",
-            url: "https://github.com/Muh-Hamza-99/partial",
-            featured: false,
+        "partial": {
+            name: 'Partial',
+            image: '/images/partial.jpeg',
+            description:
+                "A Chrome extension to autofill job applications. Didn't finish.",
+            content: `work in progress...`
         },
-        {
-            name: "Biquadris",
-            image: "/images/biquadris.png",
-            description: "A latinized version of Tetris using strong OOP principles.",
-            url: "https://github.com/Muh-Hamza-99/biquadris",
-            featured: false,
+        "uwplanr": {
+            name: 'UWPlanr',
+            image: '/images/uwplanr.png',
+            description:
+                'A course planner for the University of Waterloo students.',
+            content: `work in progress...`
         },
-        {
-            name: "UWPlanr",
-            image: "/images/uwplanr.png",
-            description: "A course planner for the University of Waterloo students.",
-            url: "https://uwplanr.netlify.app/",
-            featured: true,
-        },
-        {
-            name: "UWScheduler",
-            image: "/images/uwaterloo.png",
-            description: "A course scheduling app for University of Waterloo students.",
-            url: "https://uw-scheduler.netlify.app/",
-            featured: false,
-            github: "https://github.com/Muh-Hamza-99/uw-schedule-planner",
-        },
-        {
-            name: "Stock Price Prediction",
-            description: "A full-stack S&P500 stock prediction API with managed API keys.",
-            image: "/images/stockpredictionapp.jpeg",
-            url: "https://github.com/Muh-Hamza-99/stock-prediction-app",
-            featured: false,
-            github: "https://github.com/Muh-Hamza-99/stock-prediction-app",
-        },
-    ],
-    courses: [
-        {
-            code: "2B",
-            name: "CS 240 • CS 241 • CS 251 • MATH 239 • ECON 371",
-            image: "/images/uwaterloo.png",
-            featured: true,
-        },
-        {
-            code: "2A",
-            name: "CS 246 • CS 245 • STAT 230 • ECON 201 • SI 121R",
-            image: "/images/uwaterloo.png",
-            featured: true,
-        },
-        {
-            code: "1B",
-            name: "CS 136 • MATH 138 • MATH 136 • EARTH 122",
-            image: "/images/uwaterloo.png",
-            featured: true,
-        },
-        {
-            code: "1A",
-            name: "CS 135 • MATH 137 • MATH 135 • ECON 101 • ENGL 109",
-            image: "/images/uwaterloo.png",
-            featured: false,
-        },
-    ]
+    },
 }
