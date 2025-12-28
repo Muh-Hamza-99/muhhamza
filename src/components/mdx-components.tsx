@@ -32,10 +32,10 @@ const mdxComponents = {
     />
   ),
   ul: (props: ComponentPropsWithoutRef<'ul'>) => (
-    <ul className="list-disc list-inside mb-6 space-y-2" {...props} />
+    <ul className="list-disc mb-6 space-y-2" {...props} />
   ),
   ol: (props: ComponentPropsWithoutRef<'ol'>) => (
-    <ol className="list-decimal list-inside mb-6 space-y-2" {...props} />
+    <ol className="list-decimal mb-6 space-y-2" {...props} />
   ),
   code: (props: ComponentPropsWithoutRef<'code'>) => (
     <code
