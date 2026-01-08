@@ -7,8 +7,8 @@ import CursorDot from "@/components/cursor-dot";
 const alexandria = Alexandria({ weight: ["300", "400", "500"] });
 
 export const metadata: Metadata = {
-  title: "budgie",
-  description: "making a flock of software.",
+  title: "Muhammad Hamza  ",
+  description: "Portfolio",
   icons: {
     icon: [
       {
