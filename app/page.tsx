@@ -6,6 +6,12 @@ import Image from "next/image";
 
 const projects = [
   {
+    name: "Muhammad Hamza",
+    description: "Portfolio Website",
+    image: "/mh.svg",
+    url: "https://muhhamza.netlify.app",
+  },
+  {
     name: "Shopify",
     description: "Merchant Authentication",
     image: "/shopify.jpg",

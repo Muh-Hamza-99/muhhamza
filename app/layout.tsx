@@ -8,23 +8,22 @@ const alexandria = Alexandria({ weight: ["300", "400", "500"] });
 
 export const metadata: Metadata = {
   title: "Muhammad Hamza  ",
-  description: "Portfolio",
   icons: {
     icon: [
       {
-        url: "/budgie.png",
+        url: "/mh.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/budgie.png",
+        url: "/mh.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/budgie.svg",
+        url: "/mh.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/budgie.png",
+    apple: "/mh.png",
   },
 };
 
