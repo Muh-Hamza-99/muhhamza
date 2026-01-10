@@ -27,6 +27,14 @@ export default function Navbar() {
                 LinkedIn
               </Link>
             </Button>
+            <Button
+              asChild
+              className="bg-[#141413] text-[#FAF9F5] transition-all duration-300 hover:bg-[#5E5D59] rounded-full px-6"
+            >
+              <Link href="https://muhhamza.substack.com/">
+                Substack
+              </Link>
+            </Button>
           </div>
         </div>
     )
