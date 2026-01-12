@@ -16,7 +16,6 @@ const projects = [
     name: "Muhammad Hamza",
     description: "Portfolio Website",
     image: "/mh.svg",
-    url: "https://muhhamza.netlify.app",
   },
   {
     name: "Shopify",
@@ -76,9 +75,9 @@ export default function Home() {
       <div className="space-y-4">
         {projects.map((project) => (
           <Link
-            target="_blank"
+            target={project.url && "_blank"}
             key={project.name}
-            href={project.url}
+            href={project.url ? project.url : "/"}
             className="flex items-start p-2 rounded-full gap-2 transition-all duration-300 hover:bg-[#FAF9F5] hover:shadow-2xl"
           >
             <Image
