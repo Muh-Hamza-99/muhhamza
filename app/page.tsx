@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Container from "@/components/container";
+import Footer from "@/components/footer";
 
 const years = [
   {
@@ -124,9 +125,7 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="mt-8 text-sm text-[#5E5D59]">
-        <p>© {new Date().getFullYear()} Muhammad Hamza</p>
-      </div>
+      <Footer />
     </Container>
   );
 }
