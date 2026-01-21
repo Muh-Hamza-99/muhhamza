@@ -3,6 +3,9 @@ import { Alexandria } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import CursorDot from "@/components/cursor-dot";
+import Container from "@/components/container";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const alexandria = Alexandria({ weight: ["300", "400", "500"] });
 
@@ -36,7 +39,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("antialiased", alexandria.className)}>
         <CursorDot />
+        <Container>
+          <Navbar />
           {children}
+          <Footer />
+        </Container>
       </body>
     </html>
   );

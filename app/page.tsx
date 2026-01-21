@@ -2,9 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "@/components/navbar";
-import Container from "@/components/container";
-import Footer from "@/components/footer";
 
 const years = [
   {
@@ -85,9 +82,6 @@ const years = [
 
 export default function Home() {
   return (
-    <Container>
-      <Navbar />
-
       <div className="space-y-4">
         {years.map((year, index) => (
           <>
@@ -124,8 +118,5 @@ export default function Home() {
           </>
         ))}
       </div>
-
-      <Footer />
-    </Container>
   );
 }
