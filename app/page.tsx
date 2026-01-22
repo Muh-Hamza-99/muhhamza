@@ -14,6 +14,11 @@ const years = [
         url: "https://ummahhacks.com",
       },
       {
+        name: "Stealth",
+        description: "Foodie Social Media",
+        image: "/stealth.jpg",
+      },
+      {
         name: "Muhammad Hamza",
         description: "Portfolio Website",
         image: "/mh.svg",
