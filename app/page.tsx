@@ -92,7 +92,7 @@ export default function Home() {
           <>
             <h2 className="relative flex items-center">
               <span className="absolute left-0 right-0 top-1/2 h-[0.5px] bg-[#5E5D59]"></span>
-              <span className="relative bg-[#e8eded] pr-4 text-lg font-semibold">
+              <span className="relative bg-[#e8eded] pr-1 text-lg font-semibold">
                 {year.year}
               </span>
             </h2>
