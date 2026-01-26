@@ -9,7 +9,7 @@ const years = [
     things: [
       {
         name: "UmmahHacks",
-        description: "Jan 24, 2026",
+        description: "MedTech (2nd Place)",
         image: "/ummahhacks.jpg",
         url: "https://ummahhacks.com",
       },
