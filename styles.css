@@ -1,16 +1,18 @@
 body {
   font-family: "Crimson Pro", "Georgia", serif;
-  margin: 1.5rem;
+  margin: 0;
+  padding: 1.5rem;
   background: #f8f8f5;
   color: #252525;
 }
 
-header h1 {
-  margin: 0;
+main {
+  max-width: 34rem;
+  margin: 0 auto;
 }
 
-header p {
-  margin: 0 0 0.2em;
+header h1 {
+  margin: 0 0 0.1em;
 }
 
 header nav {
@@ -18,8 +20,7 @@ header nav {
 }
 
 section h3 {
-  margin-top: 0.4em;
-  margin-bottom: 0.2em;
+  margin: 0.4em 0 0.2em;
 }
 
 section h3:first-child {
@@ -28,9 +29,8 @@ section h3:first-child {
 
 ul {
   list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-  margin-bottom: 1.75em;
+  padding: 0;
+  margin: 0 0 1.75em;
 }
 
 section li {
