@@ -1,75 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamza</title>
-  <link rel="icon" href="public/mh.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Gulzar&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد حمزہ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F5F7FA',
+                        slate: {
+                            50: '#F8FAFC',
+                            100: '#EDF1F5',
+                            200: '#DFE5EC',
+                            300: '#C3CDD8',
+                            400: '#9BA8B8',
+                            500: '#7B8A9C',
+                            600: '#5F6D7E',
+                            700: '#475261',
+                            800: '#2C3542',
+                            900: '#171E28',
+                        },
+                        steel: {
+                            50: '#F0F4F8',
+                            100: '#E1E8F0',
+                            200: '#C5D0DE',
+                            300: '#9DADBF',
+                            400: '#7A8DA3',
+                            500: '#5D7E9C',
+                            600: '#4A6880',
+                            700: '#3A5266',
+                            800: '#263648',
+                            900: '#151F2C',
+                        },
+                        accent: '#5D7E9C',
+                        'accent-hover': '#4A6880',
+                    },
+                    fontFamily: {
+                        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+                        urdu: ['"Noto Nastaliq Urdu"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            background: #F5F7FA;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #app {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        #app.fade-out {
+            opacity: 0;
+            transform: translateY(6px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(14px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-d1 { transition-delay: 0.05s; }
+        .reveal-d2 { transition-delay: 0.1s; }
+        .reveal-d3 { transition-delay: 0.15s; }
+        .reveal-d4 { transition-delay: 0.2s; }
+        .reveal-d5 { transition-delay: 0.25s; }
+        .reveal-d6 { transition-delay: 0.3s; }
+
+        .item-card {
+            transition: background-color 0.3s ease;
+            border-radius: 10px;
+            padding: 8px 10px;
+            margin: -8px -10px;
+        }
+        .item-card:hover {
+            background-color: rgba(93, 126, 156, 0.05);
+        }
+
+        .item-img {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 1px 3px rgba(23, 30, 40, 0.06);
+        }
+        .item-card:hover .item-img {
+            transform: scale(1.03);
+            box-shadow: 0 2px 6px rgba(23, 30, 40, 0.1);
+        }
+
+        .note-link {
+            transition: color 0.25s ease, border-color 0.25s ease;
+            border-bottom: 1px solid #DFE5EC;
+        }
+        .note-link:hover {
+            color: #5D7E9C;
+            border-color: #C3CDD8;
+        }
+        .note-link:hover .note-date { color: #5D7E9C; }
+        .note-date { transition: color 0.25s ease; }
+
+        .nav-link { transition: color 0.25s ease; }
+        .nav-link:hover { color: #5D7E9C; }
+
+        .back-btn { transition: color 0.25s ease; }
+        .back-btn:hover { color: #5D7E9C; }
+        .back-btn:hover .back-arrow { transform: translateX(-2px); }
+        .back-arrow { transition: transform 0.25s ease; }
+
+        .note-prose p {
+            margin-bottom: 1.3em;
+            line-height: 1.8;
+            color: #475261;
+        }
+        .note-prose h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2C3542;
+            margin-top: 1.8em;
+            margin-bottom: 0.5em;
+            letter-spacing: -0.01em;
+        }
+        .note-prose h3:first-child { margin-top: 0; }
+        .note-prose ul, .note-prose ol {
+            margin-bottom: 1.3em;
+            padding-left: 1.2em;
+            color: #475261;
+        }
+        .note-prose li {
+            margin-bottom: 0.35em;
+            line-height: 1.7;
+        }
+        .note-prose code {
+            background: #EDF1F5;
+            padding: 1px 5px;
+            border-radius: 4px;
+            font-size: 0.84em;
+            color: #5F6D7E;
+            font-family: 'SF Mono', 'Consolas', monospace;
+        }
+        .note-prose pre {
+            background: #EDF1F5;
+            padding: 14px 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 1.3em;
+        }
+        .note-prose pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.8em;
+            line-height: 1.55;
+        }
+        .note-prose blockquote {
+            border-left: 2px solid #C3CDD8;
+            padding-left: 1em;
+            margin-bottom: 1.3em;
+            color: #5F6D7E;
+            font-style: italic;
+        }
+        .note-prose strong { color: #2C3542; font-weight: 600; }
+        .note-prose a { color: #5D7E9C; text-decoration: underline; text-underline-offset: 2px; }
+        .note-prose a:hover { color: #4A6880; }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #C3CDD8; border-radius: 2px; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .item-card, .note-link, .item-img, #app, .nav-link, .back-btn, .back-arrow, .note-date {
+                transition: none;
+            }
+        }
+    </style>
 </head>
-<body>
-  <main>
-  <header>
-    <h1><span id="name" dir="rtl">محمد حمزہ</span></h1>
-    <nav>
-      <a target="_blank" href="https://github.com/Muh-Hamza-99">GitHub</a> | <a target="_blank" href="https://www.linkedin.com/in/hamzaasad/">LinkedIn</a> | <a target="_blank" href="https://muhhamza.substack.com">Substack</a> | <a target="_blank" href="/public/resume.pdf">Resume</a>
-    </nav>
-  </header>
+<body class="font-sans text-slate-700 antialiased">
+    <div id="app" class="max-w-xl mx-auto px-10 sm:px-16 md:px-24 py-16 md:py-24"></div>
 
-  <section>
-    <h3>2026</h3>
-    <ul>
-      <li><a target="_blank" href="https://devpost.com/software/comfortcare">UmmahHacks</a> | Built ComfortCare, a platform to connect expecting mothers with midwives using Next.js. 2nd place in the MedTech track.</li>
-      <li><a href="#">Hamza</a> | A vanilla changelog-style portfolio website built using HTML, CSS & JavaScript.</li>
-      <li><a target="_blank" href="https://shopify.com">Shopify</a> | Merchant authentication.</li>
-    </ul>
+    <script>
+        const experiences = [
+            {
+                title: 'Software Engineer',
+                subtitle: 'Shopify · Jan 2026 – Apr 2026',
+                description: 'Merchant authentication.',
+                image: '/public/shopify.jpg'
+            },
+            {
+                title: 'Software Engineer',
+                subtitle: 'Vidyard · Sep 2025 - Dec 2025',
+                description: 'AI avatar and video features.',
+                image: '/public/vidyard.jpg'
+            },
+            {
+                title: 'Automation and AI/ML Developer',
+                subtitle: 'Nokia · Jan 2025 - Apr 2025',
+                description: 'Autonomous networks SDK.',
+                image: '/public/nokia.jpg'
+            },
+            {
+                title: 'Business Analyst',
+                subtitle: 'Twimbit · May 2024 - Aug 2024',
+                description: 'Telco AI/CX research.',
+                image: '/public/twimbit.jpg'
+            }
+        ];
 
+        const projects = [
+            {
+                title: 'falcon',
+                description: 'Fastest internship aggregator.',
+                image: '/public/falcon.jpg'
+            },
+            {
+                title: 'UWPlanr',
+                description: 'University of Waterloo course planner.',
+                image: '/public/uwplanr.jpg'
+            }
+        ];
 
-    <h3>2025</h3>
-    <ul>
-      <li><a target="_blank" href="https://tryfalcon.io">falcon</a> | Built a real-time internship dashboard using React, Go, PostgreSQL & GCP. Developed tooling & UGC using Bash & Python. Sourced 50K+ internships across 500+ companies with 20K+ impressions.</li>
-      <li><a target="_blank" href="https://devpost.com/software/dripbot-sxj301">Hack the North</a> | Hacked an AI fit checker using Next.js & Vercel AI SDK. Top 32/250 projects.</li>
-      <li><a target="_blank" href="https://vidyard.com">Vidyard</a> | Built features for virtual backgrounds & voice preview for AIA videos, worked on freemium AIA promotions, upgraded to H264 codecs & fixed multiple high-priority bugs using React, Vue, Ruby on Rails, Node.js & MySQL.</li>
-      <li><a target="_blank" href="https://www.instagram.com/_stoicvalues/">_stoicvalues</a> | Built an IG bot for stoic-style reels using Go & ASS, with 50+ posts and 10K+ views.</li>
-      <li><a target="_blank" href="https://uwaterloo.ca">University of Waterloo</a> | Took MATH 239, CS 240, CS 241, CS 251 & ECON 371.</li>
-      <li><a target="_blank" href="https://nokia.com">Nokia</a> | Led & completed development of autonomous networks SDK UI using React, FastAPI, Docker & Helm.</li>
-    </ul>
+        const study = [
+            {
+                title: 'Bachelor\'s of Computer Science',
+                subtitle: 'University of Waterloo · Sep 2023 – Apr 2028',
+                description: 'Minor in combinatorics and optimization.',
+                image: '/public/waterloo.jpg'
+            },
+            {
+                title: 'A-Levels',
+                subtitle: 'MRIS · Sep 2019 - May 2023',
+                description: 'Mathematics, Physics and Computer Science.',
+                image: '/public/mris.jpg'
+            },
+        ];
 
-    <h3>2024</h3>
-    <ul>
-      <li><a target="_blank" href="https://uwaterloo.ca">University of Waterloo</a> | Took STAT 230, CS 245, CS 246, ECON 201 & SI 121R.</li>
-      <li><a target="_blank" href="https://uwplanr.netlify.app">UWPlanr</a> | Built a course planner for 4000+ UWaterloo courses & parser for course requirements using React, Python & MongoDB. Peaked at 100 DAU.</li>
-      <li><a target="_blank" href="https://twimbit.com">Twimbit</a> | Wrote AI/CX focused dossiers for 30+ companies & worked on Twimbit's telco AI/CX ratings.</li>
-      <li><a target="_blank" href="https://uwaterloo.ca">University of Waterloo</a> | Took MATH 136, MATH 138, CS 136, CS 136L & EARTH 122.</li>
-    </ul>
+        const notes = [
+            {
+                id: 'hello-world',
+                title: 'Hello World',
+                date: '2026-04-03',
+                content: `
+                    <p>My first note. Hello everyone.</p>
+                `
+            },
+        ];
 
-    <h3>2023</h3>
-    <ul>
-      <li><a target="_blank" href="https://uwaterloo.ca">University of Waterloo</a> | Started Bachelor's of Computer Science. Took MATH 135, MATH 137, CS 135, ECON 101 & ENGL 109.</li>
-      <li><a target="_blank" href="https://portal.maarif.sa/riyadhinternational">MRIS</a> | Sat Mathematics, Physics & Computer Science A-Levels.</li>
-    </ul>
+        /* ========== ROUTER ========== */
 
-    <h3>2022</h3>
-    <ul>
-      <li><a target="_blank" href="https://portal.maarif.sa/riyadhinternational">MRIS</a> | Sat Mathematics, Physics, Chemistry & Computer Science AS-Levels.</li>
-    </ul>
+        const app = document.getElementById('app');
 
-    <h3>2021</h3>
-    <ul>
-      <li><a target="_blank" href="https://portal.maarif.sa/riyadhinternational">Wudroid</a> | Built a Discord bot with customizable features (e.g.: music player, economy system, etc.) for 2 servers using Node.js & MongoDB.</li>
-    </ul>
-  </section>
+        function navigate() {
+            app.classList.add('fade-out');
+            setTimeout(() => {
+                const hash = window.location.hash || '#/';
+                if (hash === '#/' || hash === '#' || hash === '') renderHome();
+                else if (hash === '#/notes') renderNotesList();
+                else if (hash.startsWith('#/notes/')) renderNoteDetail(hash.replace('#/notes/', ''));
+                else renderHome();
 
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <a href="https://cs.uwatering.com/#https://muhhamza.netlify.app?nav=prev">←</a>
-      <a href="https://cs.uwatering.com/#https://muhhamza.netlify.app" target="_blank">
-          <img src="https://cs.uwatering.com/icon.black.svg" alt="CS Webring" style="width: 24px; height: auto; opacity: 0.8;"/>
-      </a>
-      <a href="https://cs.uwatering.com/#https://muhhamza.netlify.app?nav=next">→</a>
-  </div>
-  </main>
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+                window.scrollTo({ top: 0, behavior: 'instant' });
+                requestAnimationFrame(() => requestAnimationFrame(() => app.classList.remove('fade-out')));
+                setupScrollReveal();
+            }, 300);
+        }
+
+        window.addEventListener('hashchange', navigate);
+        window.addEventListener('DOMContentLoaded', navigate);
+
+        /* ========== SCROLL REVEAL ========== */
+
+        function setupScrollReveal() {
+            const els = document.querySelectorAll('.reveal');
+            if (!els.length) return;
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+            }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+            els.forEach(el => obs.observe(el));
+        }
+
+        /* ========== HELPERS ========== */
+
+        function fmtDate(d) {
+            return new Date(d + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        }
+
+        function card(item, dc) {
+            return `
+                <div class="reveal ${dc} mb-4 last:mb-0">
+                    <div class="item-card flex gap-3.5 items-start cursor-default">
+                        <img src="${item.image}" alt="" class="item-img w-11 h-11 sm:w-12 sm:h-12 rounded-lg object-cover flex-shrink-0" loading="lazy">
+                        <div class="min-w-0 pt-px">
+                            <h3 class="text-[0.82rem] sm:text-sm font-semibold text-slate-800 tracking-tight">${item.title}</h3>
+                            ${item.subtitle ? `<p class="text-steel-500 text-[11px] mt-px">${item.subtitle}</p>` : ''}
+                            ${item.description ? `<p class="text-slate-500 text-[13px] sm:text-xs mt-1 leading-relaxed">${item.description}</p>` : ''}
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        function heading(text, dc) {
+            return `
+                <div class="reveal ${dc} mb-6">
+                    <h2 class="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400">${text}</h2>
+                    <div class="w-7 h-[1.5px] bg-slate-300 mt-2 rounded-full"></div>
+                </div>`;
+        }
+
+        function backArrow(href, label) {
+            return `
+                <a href="${href}" class="back-btn inline-flex items-center gap-1.5 text-slate-400" aria-label="${label}">
+                    <i data-lucide="arrow-left" class="w-3.5 h-3.5 back-arrow"></i>
+                    <span class="text-[11px]">Back</span>
+                </a>`;
+        }
+
+        /* ========== RENDERERS ========== */
+
+        function renderHome() {
+            document.title = 'محمد حمزہ';
+            app.innerHTML = `
+                <header class="reveal mb-10 md:mb-12">
+                    <h1 dir="rtl" class="font-urdu text-xl sm:text-[1.35rem] md:text-[1.5rem] text-slate-800 leading-tight" style="font-weight:600">محمد حمزہ</h1>
+                </header>
+
+                <nav class="reveal reveal-d1 flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 md:mb-10" aria-label="Navigation">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link text-slate-400 text-[12px]" aria-label="GitHub">Github</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="nav-link text-slate-400 text-[12px]" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#/notes" class="nav-link text-slate-400 text-[12px]" aria-label="Notes">Notes</a>
+                </nav>
+
+                <section class="mb-12 md:mb-14">
+                    ${heading('Experience', 'reveal-d2')}
+                    ${experiences.map((e, i) => card(e, `reveal-d${i + 3}`)).join('')}
+                </section>
+
+                <section class="mb-12 md:mb-14">
+                    ${heading('Projects', 'reveal-d1')}
+                    ${projects.map((p, i) => card(p, `reveal-d${i + 2}`)).join('')}
+                </section>
+
+                <section class="mb-12 md:mb-14">
+                    ${heading('Study', 'reveal-d1')}
+                    ${study.map((s, i) => card(s, `reveal-d${i + 2}`)).join('')}
+                </section>
+
+                <section class="flex justify-center">
+                    <div class="reveal reveal-d1 flex items-center gap-3 py-4">
+                        <a href="https://cs.uwatering.com/#https://muhhamza.netlify.app?nav=prev" class="text-slate-400 hover:text-slate-600 transition-colors text-lg">←</a>
+                        <a href="https://cs.uwatering.com/#https://muhhamza.netlify.app" target="_blank" rel="noopener noreferrer" class="transition-opacity hover:opacity-100">
+                            <img src="https://cs.uwatering.com/icon.black.svg" alt="CS Webring" style="width: 24px; height: auto; opacity: 0.6;" class="hover:opacity-80 transition-opacity">
+                        </a>
+                        <a href="https://cs.uwatering.com/#https://muhhamza.netlify.app?nav=next" class="text-slate-400 hover:text-slate-600 transition-colors text-lg">→</a>
+                    </div>
+                </section>
+            `;
+        }
+
+        function renderNotesList() {
+            document.title = 'Notes — محمد حمزہ';
+            app.innerHTML = `
+                <div class="reveal mb-10">
+                    ${backArrow('#/', 'Back to home')}
+                </div>
+                <header>${heading('Notes', 'reveal-d1')}</header>
+                <div>
+                    ${notes.map((n, i) => `
+                        <div class="reveal reveal-d${Math.min(i + 2, 6)}">
+                            <a href="#/notes/${n.id}" class="note-link flex justify-between items-baseline py-3 block" aria-label="${n.title}">
+                                <span class="text-sm font-medium text-slate-800 tracking-tight">${n.title}</span>
+                                <span class="note-date text-slate-400 text-[11px] flex-shrink-0 ml-5">${fmtDate(n.date)}</span>
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function renderNoteDetail(id) {
+            const note = notes.find(n => n.id === id);
+            if (!note) {
+                app.innerHTML = `
+                    <div class="reveal">
+                        ${backArrow('#/notes', 'Back to notes')}
+                        <p class="text-slate-500 text-sm mt-8">Note not found.</p>
+                    </div>`;
+                return;
+            }
+            document.title = `${note.title} — محمد حمزہ`;
+            app.innerHTML = `
+                <div class="reveal mb-10">
+                    ${backArrow('#/notes', 'Back to notes')}
+                </div>
+                <div class="reveal reveal-d1">
+                    <h1 class="text-lg sm:text-xl font-semibold text-slate-800 tracking-tight leading-snug">${note.title}</h1>
+                    <p class="text-slate-400 text-[11px] mt-1.5">${fmtDate(note.date)}</p>
+                </div>
+                <article class="reveal reveal-d2 note-prose mt-8 md:mt-9 text-[13px]">
+                    ${note.content}
+                </article>
+            `;
+        }
+    </script>
 </body>
 </html>
