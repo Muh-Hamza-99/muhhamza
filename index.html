@@ -301,13 +301,10 @@
         function card(item, dc) {
             return `
                 <div class="reveal ${dc} mb-4 last:mb-0">
-                    <div class="item-card flex gap-3.5 items-start cursor-default">
-                        <img src="${item.image}" alt="" class="item-img w-11 h-11 sm:w-12 sm:h-12 rounded-lg object-cover flex-shrink-0" loading="lazy">
-                        <div class="min-w-0 pt-px">
-                            <h3 class="text-[0.82rem] sm:text-sm font-semibold text-slate-800 tracking-tight">${item.title}</h3>
-                            ${item.subtitle ? `<p class="text-steel-500 text-[11px] mt-px">${item.subtitle}</p>` : ''}
-                            ${item.description ? `<p class="text-slate-500 text-[13px] sm:text-xs mt-1 leading-relaxed">${item.description}</p>` : ''}
-                        </div>
+                    <div class="item-card cursor-default">
+                        <h3 class="text-[0.82rem] sm:text-sm font-semibold text-slate-800 tracking-tight">${item.title}</h3>
+                        ${item.subtitle ? `<p class="text-steel-500 text-[11px] mt-px">${item.subtitle}</p>` : ''}
+                        ${item.description ? `<p class="text-slate-500 text-[13px] sm:text-xs mt-1 leading-relaxed">${item.description}</p>` : ''}
                     </div>
                 </div>`;
         }
@@ -338,8 +335,8 @@
                 </header>
 
                 <nav class="reveal reveal-d1 flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 md:mb-10" aria-label="Navigation">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link text-slate-400 text-[12px]" aria-label="GitHub">Github</a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="nav-link text-slate-400 text-[12px]" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/Muh-Hamza-99" target="_blank" rel="noopener noreferrer" class="nav-link text-slate-400 text-[12px]" aria-label="GitHub">Github</a>
+                    <a href="https://linkedin.com/in/hamzaasad" target="_blank" rel="noopener noreferrer" class="nav-link text-slate-400 text-[12px]" aria-label="LinkedIn">LinkedIn</a>
                     <a href="#/notes" class="nav-link text-slate-400 text-[12px]" aria-label="Notes">Notes</a>
                 </nav>
 
