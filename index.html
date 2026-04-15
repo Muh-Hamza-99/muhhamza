@@ -221,18 +221,33 @@
 
         const projects = [
             {
-                title: 'falcon',
-                description: 'Fastest internship aggregator.',
-                image: '/public/falcon.jpg'
+                title: 'PikaDB',
+                description: 'SQL-over-LSM database with versioned, level-tiered compaction, secondary indexes and SQL support.',
+                image: '/public/go.svg'
             },
             {
                 title: 'twig',
-                description: 'Embedded log key-value store in Rust.',
+                description: 'Append-only, log-segmented embedded key-value store with atomic background compaction.',
+                image: '/public/rust.svg'
+            },
+            {
+                title: 'falcon',
+                description: 'Fastest internship aggregator with concurrent workers running 100 times/day, amassing 50K+ internships across 500+ companies till date.',
                 image: '/public/falcon.jpg'
             },
             {
+                title: 'Deframe',
+                description: 'AI agent for deconstructing news headlines linguistic biases.',
+                image: '/public/deframe.jpg'
+            },
+            {
+                title: 'WLP4',
+                description: 'C compiler with maximal munch lexing, bottom-up parsing, type-checking ASTs and MIPS code generation.',
+                image: '/public/cplusplus.svg'
+            },
+            {
                 title: 'UWPlanr',
-                description: 'University of Waterloo course planner.',
+                description: 'Course planner for the University of Waterloo with 3000+ course requirements parsed to n-ary trees.',
                 image: '/public/uwplanr.jpg'
             }
         ];
@@ -247,7 +262,7 @@
             {
                 title: 'A-Levels',
                 subtitle: 'MRIS · Sep 2019 - May 2023',
-                description: 'Mathematics, Physics and Computer Science.',
+                description: 'Mathematics, Physics, Computer Science.',
                 image: '/public/mris.jpg'
             },
         ];
@@ -308,10 +323,13 @@
         function card(item, dc) {
             return `
                 <div class="reveal ${dc} mb-4 last:mb-0">
-                    <div class="item-card cursor-default">
-                        <h3 class="text-[0.82rem] sm:text-sm font-semibold text-slate-800 tracking-tight">${item.title}</h3>
-                        ${item.subtitle ? `<p class="text-steel-500 text-[11px] mt-px">${item.subtitle}</p>` : ''}
-                        ${item.description ? `<p class="text-slate-500 text-[13px] sm:text-xs mt-1 leading-relaxed">${item.description}</p>` : ''}
+                    <div class="item-card flex gap-3.5 items-start cursor-default">
+                        <img src="${item.image}" alt="" class="item-img w-9 h-9 sm:w-10 sm:h-10 rounded-lg object-cover flex-shrink-0" loading="lazy">
+                        <div class="min-w-0 pt-px">
+                            <h3 class="text-[0.82rem] sm:text-sm font-semibold text-slate-800 tracking-tight">${item.title}</h3>
+                            ${item.subtitle ? `<p class="text-steel-500 text-[11px] mt-px">${item.subtitle}</p>` : ''}
+                            ${item.description ? `<p class="text-slate-500 text-[13px] sm:text-xs mt-1 leading-relaxed">${item.description}</p>` : ''}
+                        </div>
                     </div>
                 </div>`;
         }
