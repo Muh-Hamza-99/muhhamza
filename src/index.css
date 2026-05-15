@@ -36,6 +36,9 @@
   --sidebar-border: rgb(255, 255, 255);
   --sidebar-ring: rgb(82, 82, 82);
   --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Bricolage Mono", ui-monospace, SF Mono, SF Mono-Regular, Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
   --radius: 0rem;
   --shadow-x: 0px;
   --shadow-y: 1px;
@@ -93,6 +96,7 @@
 
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
+  --font-urdu: var(--font-urdu);
   --font-serif: var(--font-serif);
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -117,4 +121,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes dots {
+  0%, 20% { content: "."; }
+  40%, 60% { content: ".."; }
+  80%, 100% { content: "..."; }
 }

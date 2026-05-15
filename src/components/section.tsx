@@ -1,21 +1,28 @@
-import Plus from './plus';
-
-const Section = ({
-  children,
-  borderTop = false,
-}: {
+interface Section {
   children: React.ReactNode;
-  borderTop?: boolean;
-}) => {
+  tb?: boolean;
+  rb?: boolean;
+  bb?: boolean;
+  lb?: boolean;
+}
+
+const Section = ({ children, tb = false, rb = false, bb = false, lb = false }: Section) => {
+  const foldSize = 5;
   return (
-    <section className={`relative px-4 py-5 md:px-6 md:py-6 ${borderTop ? "border-t border-border" : ""}`}>
-      {borderTop && (
-        <>
-          <Plus className="-top-[5px] -left-[5px]" />
-          <Plus className="-top-[5px] -right-[5px]" />
-        </>
-      )}
-      {children}
+    <section className={`h-full bg-border ${tb && "pt-[0.5px]"} ${rb && "pr-[0.5px]"} ${bb && "pb-[0.5px]"} ${lb && "pl-[0.5px]"}`}>
+      <div
+        className="h-full bg-background flex flex-col justify-center px-4 py-3 md:px-6 md:py-4"
+        style={{
+          clipPath: `polygon(
+            ${foldSize}px 0, calc(100% - ${foldSize}px) 0, 
+            100% ${foldSize}px, 100% calc(100% - ${foldSize}px), 
+            calc(100% - ${foldSize}px) 100%, ${foldSize}px 100%, 
+            0 calc(100% - ${foldSize}px), 0 ${foldSize}px
+          )`,
+        }}
+      >
+        {children}
+      </div>
     </section>
   );
 };
