@@ -5,6 +5,7 @@ export type BlogMeta = {
   description: string;
   date: string;
   slug: string;
+  logo?: string;
 };
 
 export type BlogPostModule = {
@@ -12,7 +13,7 @@ export type BlogPostModule = {
   meta: BlogMeta;
 };
 
-const postModules = import.meta.glob<BlogPostModule>("../blog/posts/*.mdx", {
+const postModules = import.meta.glob<BlogPostModule>("../content/*.mdx", {
   eager: true,
 });
 
@@ -34,7 +35,7 @@ export function getAllPosts(): BlogMeta[] {
 }
 
 export function getPostBySlug(slug: string): BlogPostModule | undefined {
-  const path = `../blog/posts/${slug}.mdx`;
+  const path = `../content/${slug}.mdx`;
   return postModules[path];
 }
 

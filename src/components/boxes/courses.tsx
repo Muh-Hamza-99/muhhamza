@@ -2,6 +2,7 @@ import { useState } from "react";
 import { terms } from "../../lib/data";
 import Section from "../section";
 import { useIsMobile } from "../../hooks/use-is-mobile";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -48,9 +49,9 @@ const Courses = () => {
           }}
         >
           {coursesList.map((course) => (
-            <p key={course.code} className="font-medium text-center text-sm md:text-base">
+            <Link to={course.link} key={course.code} className="font-medium text-center text-sm md:text-base">
               {isMobile ? course.code.split(" ").map((part, index) => <span key={index} className="block">{part}</span>) : course.code}
-            </p>
+            </Link>
           ))}
         </div>
 

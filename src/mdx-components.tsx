@@ -3,22 +3,22 @@ import type { ComponentPropsWithoutRef } from "react";
 export const mdxComponents = {
   h1: (props: ComponentPropsWithoutRef<"h1">) => (
     <h1
-      className="mt-10 text-2xl font-semibold tracking-tight text-foreground first:mt-0 md:text-3xl"
+      className="mt-6 text-xl font-semibold tracking-tight text-foreground first:mt-0 md:text-2xl"
       {...props}
     />
   ),
   h2: (props: ComponentPropsWithoutRef<"h2">) => (
     <h2
-      className="mt-8 text-xl font-semibold tracking-tight text-foreground md:text-2xl"
+      className="mt-4 text-lg font-semibold tracking-tight text-foreground md:text-xl"
       {...props}
     />
   ),
   h3: (props: ComponentPropsWithoutRef<"h3">) => (
-    <h3 className="mt-6 text-lg font-semibold text-foreground" {...props} />
+    <h3 className="mt-2 text-base font-semibold text-foreground" {...props} />
   ),
   p: (props: ComponentPropsWithoutRef<"p">) => (
     <p
-      className="mt-4 text-base leading-relaxed text-muted-foreground first:mt-0"
+      className="mt-2 text-base leading-relaxed text-muted-foreground first:mt-0"
       {...props}
     />
   ),

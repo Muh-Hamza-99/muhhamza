@@ -2,6 +2,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { Link, useParams } from "react-router-dom";
 import { mdxComponents } from "../mdx-components";
 import { getPostBySlug } from "../lib/blog";
+import Section from "../components/section";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -24,28 +25,37 @@ const BlogPost = () => {
   const { default: PostBody, meta } = mod;
 
   return (
-    <MDXProvider components={mdxComponents}>
-      <article className="mx-auto max-w-3xl px-4 py-12 md:px-6">
-        <p className="font-mono text-xs uppercase tracking-wide text-muted-foreground">
-          <time dateTime={meta.date}>{meta.date}</time>
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-          {meta.title}
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground">{meta.description}</p>
-        <div className="mt-12">
-          <PostBody />
-        </div>
-        <footer className="mt-16 border-t border-border pt-8">
-          <Link
-            to="/blog"
-            className="text-sm text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground"
-          >
-            ← All posts
-          </Link>
-        </footer>
-      </article>
-    </MDXProvider>
+    <main className="min-h-screen flex items-center bg-background text-foreground font-sans">
+      <div className="w-full mx-auto max-w-4xl px-4 md:px-8 lg:px-16 xl:px-32">
+        <MDXProvider components={mdxComponents}>
+          <Section tb rb bb lb>
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col gap-y-1">
+                <h1 className="text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                  {meta.title}
+                </h1>
+                <p className="text-base md:text-lg text-muted-foreground">
+                  {meta.description}
+                </p>
+              </div>
+              {meta.logo && (
+                <img
+                  src={meta.logo}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="h-8 w-8 md:h-10 md:w-10 rounded-sm"
+                  loading="lazy"
+                />
+              )}
+            </div>
+          </Section>
+          <Section rb bb lb>
+            <PostBody />
+          </Section>
+        </MDXProvider>
+      </div>
+    </main>
   );
 };
 

@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import Section from "../section";
 
 const Hero = () => {
   return (
     <Section tb rb bb lb>
       <div className="flex justify-between items-center">
-        <h1 className="text-xl font-semibold tracking-tight md:text-2xl">
-          Muhammad Hamza
-        </h1>
+        <Link to="/" className="text-xl font-semibold tracking-tight md:text-2xl">
+            Muhammad Hamza
+        </Link>
         {/* <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-2 items-center">
             <span className="relative flex h-2 w-2">
