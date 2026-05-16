@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { terms } from "../../lib/data";
 import Section from "../section";
+import { useIsMobile } from "../../hooks/use-is-mobile";
 
 const Courses = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const isMobile = useIsMobile();
   const [currentIndex, setCurrentIndex] = useState(terms.length - 1);
 
   const currentTerm = terms[currentIndex];
@@ -47,7 +49,7 @@ const Courses = () => {
         >
           {coursesList.map((course) => (
             <p key={course.code} className="font-medium text-center text-sm md:text-base">
-              {course.code}
+              {isMobile ? course.code.split(" ").map((part, index) => <span key={index} className="block">{part}</span>) : course.code}
             </p>
           ))}
         </div>
