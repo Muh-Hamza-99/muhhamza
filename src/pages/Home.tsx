@@ -1,3 +1,4 @@
+import Courses from "../components/boxes/courses";
 import Experiences from "../components/boxes/experiences";
 import Hero from "../components/boxes/hero";
 import Projects from "../components/boxes/projects";
@@ -9,6 +10,7 @@ const Home = () => {
         <Hero />
         <Experiences />
         <Projects />
+        <Courses />
       </div>
     </main>
   );

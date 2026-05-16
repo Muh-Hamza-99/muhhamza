@@ -4,17 +4,17 @@ const Hero = () => {
   return (
     <Section tb rb bb lb>
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">
+        <h1 className="text-xl font-semibold tracking-tight md:text-2xl">
           Muhammad Hamza
         </h1>
-        <div className="flex flex-col gap-y-2">
+        {/* <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-2 items-center">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
             <span>Waterloo, ON</span>
-          </div>
+          </div> */}
 
           <div className="flex justify-end gap-3 text-muted-foreground">
             <a
@@ -25,7 +25,7 @@ const Hero = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -41,7 +41,7 @@ const Hero = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -60,7 +60,7 @@ const Hero = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -75,7 +75,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </Section>
   );
 };
