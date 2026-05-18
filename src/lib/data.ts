@@ -73,7 +73,7 @@ export const projects: Project[] = [
   },
     {
     name: "Deframe",
-    description: "Lingustic deconstruction agent",
+    description: "Linguistic deconstruction agent",
     link: "/deframe",
   },
   {
