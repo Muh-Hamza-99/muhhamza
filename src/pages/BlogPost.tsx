@@ -42,9 +42,9 @@ const BlogPost = () => {
                 <img
                   src={meta.logo}
                   alt=""
-                  width={40}
-                  height={40}
-                  className="h-8 w-8 md:h-10 md:w-10 rounded-sm"
+                  width={50}
+                  height={50}
+                  className="h-10 w-10 md:h-12 md:w-12 rounded-sm"
                   loading="lazy"
                 />
               )}

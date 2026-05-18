@@ -71,6 +71,11 @@ export const projects: Project[] = [
     description: "SQL over LSM database",
     link: "/pikadb",
   },
+    {
+    name: "Deframe",
+    description: "Lingustic deconstruction agent",
+    link: "/deframe",
+  },
   {
     name: "WLP4",
     description: "C subset to MIPS compiler",

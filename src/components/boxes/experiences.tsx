@@ -20,7 +20,7 @@ const Experiences = () => {
               alt=""
               width={20}
               height={20}
-              className="ml-1 h-6 w-6 rounded-sm"
+              className="ml-1 h-6 w-6 rounded-xs"
               loading="lazy"
             />
           </Link>

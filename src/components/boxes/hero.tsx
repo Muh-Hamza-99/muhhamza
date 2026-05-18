@@ -22,7 +22,7 @@ const Hero = () => {
               target="_blank"
               href="mailto:muhammad.hamzaasad@gmail.com"
               aria-label="Email"
-              className="hover:text-foreground transition-colors"
+              className="hover:text-primary transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const Hero = () => {
               target="_blank"
               href="https://github.com/Muh-Hamza-99"
               aria-label="GitHub"
-              className="hover:text-foreground transition-colors"
+              className="hover:text-primary transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ const Hero = () => {
               target="_blank"
               href="https://www.linkedin.com/in/hamzaasad/"
               aria-label="LinkedIn"
-              className="hover:text-foreground transition-colors"
+              className="hover:text-primary transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

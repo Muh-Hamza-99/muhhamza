@@ -49,7 +49,7 @@ const Courses = () => {
           }}
         >
           {coursesList.map((course) => (
-            <Link to={course.link} key={course.code} className="font-medium text-center text-sm md:text-base">
+            <Link to={course.link} key={course.code} className="font-medium text-center text-sm md:text-base hover:text-primary transition-colors">
               {isMobile ? course.code.split(" ").map((part, index) => <span key={index} className="block">{part}</span>) : course.code}
             </Link>
           ))}
