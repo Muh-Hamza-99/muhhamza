@@ -32,10 +32,10 @@ const Courses = () => {
 
   return (
     <Section rb bb lb>
-      <div className="flex items-center gap-x-0.5">
+      <div className="flex items-center">
         <button
           onClick={previous}
-          className="text-xs hover:text-muted-foreground transition-colors"
+          className="text-[8px] hover:text-muted-foreground transition-colors"
         >
           ◀
         </button>
@@ -57,7 +57,7 @@ const Courses = () => {
 
         <button
           onClick={next}
-          className="text-xs hover:text-muted-foreground transition-colors"
+          className="text-[8px] hover:text-muted-foreground transition-colors"
         >
           ▶
         </button>

@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
 import { extracurriculars } from "../../lib/data";
 import Section from "../section";
 
 const Extracurriculars = () => {
   return (
-    <Section rb bb>
+    <Section rb bb lb>
       <ul className="space-y-2">
         {extracurriculars.map((extracurricular) => (
-          <li
+          <Link
+            to={extracurricular.link}
             key={extracurricular.company}
             className="flex items-center gap-1 text-base hover:cursor-pointer hover:translate-x-1 transition-all"
           >
@@ -18,10 +20,10 @@ const Extracurriculars = () => {
               alt=""
               width={20}
               height={20}
-              className="ml-1 h-6 w-6 rounded-sm"
+              className="ml-1 h-6 w-6 rounded-xs"
               loading="lazy"
             />
-          </li>
+          </Link>
         ))}
       </ul>
     </Section>

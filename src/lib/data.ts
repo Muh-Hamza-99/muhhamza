@@ -9,6 +9,7 @@ type Extracurricular = {
   role: string;
   company: string;
   logo: string;
+  link: string;
 };
 
 type Project = {
@@ -57,7 +58,8 @@ export const experiences: Experience[] = [
 ];
 
 export const extracurriculars: Extracurricular[] = [
-  { role: "Operations Executive", company: "PSA", logo: "/psa.jpg" },
+  // { role: "Core Member", company: "WAT.ai", logo: "/watai.svg", link: "/watai" },
+  { role: "Operations Executive", company: "PSA", logo: "/psa.jpg", link: "/psa" },
 ];
 
 export const projects: Project[] = [

@@ -1,6 +1,6 @@
 import Courses from "../components/boxes/courses";
 import Experiences from "../components/boxes/experiences";
-// import Extracurriculars from "../components/boxes/extracurriculars";
+import Extracurriculars from "../components/boxes/extracurriculars";
 import Hero from "../components/boxes/hero";
 import Projects from "../components/boxes/projects";
 
@@ -12,7 +12,7 @@ const Home = () => {
         <Experiences />
         <Projects />
         <Courses />
-        {/* <Extracurriculars /> */}
+        <Extracurriculars />
       </div>
     </main>
   );
