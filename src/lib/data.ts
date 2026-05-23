@@ -58,7 +58,7 @@ export const experiences: Experience[] = [
 ];
 
 export const extracurriculars: Extracurricular[] = [
-  // { role: "Core Member", company: "WAT.ai", logo: "/watai.svg", link: "/watai" },
+  { role: "Core Member", company: "WAT.ai", logo: "/watai.svg", link: "/watai" },
   { role: "Operations Executive", company: "PSA", logo: "/psa.jpg", link: "/psa" },
 ];
 
