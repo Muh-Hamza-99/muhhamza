@@ -1,8 +1,6 @@
 /// <reference types="vite/client" />
 
 declare module "*.mdx" {
-  import type { ComponentType } from "react";
-
   export const meta: {
     title: string;
     description: string;
@@ -10,6 +8,6 @@ declare module "*.mdx" {
     slug: string;
   };
 
-  const MDXComponent: ComponentType;
+  const MDXComponent: React.ComponentType<{ components?: Record<string, React.ComponentType<any>> }>;
   export default MDXComponent;
 }

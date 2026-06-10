@@ -1,4 +1,3 @@
-import { MDXProvider } from "@mdx-js/react";
 import { Link, useParams } from "react-router-dom";
 import { mdxComponents } from "../mdx-components";
 import { getPostBySlug } from "../lib/blog";
@@ -22,38 +21,14 @@ const BlogPost = () => {
     );
   }
 
-  const { default: PostBody, meta } = mod;
+  const { default: PostBody } = mod;
 
   return (
     <main className="min-h-screen flex items-center bg-background text-foreground font-sans">
-      <div className="w-full mx-auto max-w-4xl px-4 md:px-8 lg:px-16 xl:px-32">
-        <MDXProvider components={mdxComponents}>
-          <Section tb rb bb lb>
-            <div className="flex justify-between items-center">
-              <div className="flex flex-col gap-y-1">
-                <h1 className="text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-                  {meta.title}
-                </h1>
-                <p className="text-base md:text-lg text-muted-foreground">
-                  {meta.description}
-                </p>
-              </div>
-              {meta.logo && (
-                <img
-                  src={meta.logo}
-                  alt=""
-                  width={50}
-                  height={50}
-                  className="h-10 w-10 md:h-12 md:w-12 rounded-sm"
-                  loading="lazy"
-                />
-              )}
-            </div>
-          </Section>
-          <Section rb bb lb>
-            <PostBody />
-          </Section>
-        </MDXProvider>
+      <div className="w-full mx-auto max-w-3xl px-4 md:px-8 lg:px-16 xl:px-32">
+        <Section>
+          <PostBody components={mdxComponents} />
+        </Section>
       </div>
     </main>
   );
