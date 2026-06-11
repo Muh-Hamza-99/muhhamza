@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { MDXProvider } from "@mdx-js/react";
 import { mdxComponents } from "../mdx-components";
 import { getPostBySlug } from "../lib/blog";
 import Section from "../components/section";
@@ -27,7 +28,9 @@ const BlogPost = () => {
     <main className="min-h-screen flex items-center bg-background text-foreground font-sans">
       <div className="w-full mx-auto max-w-3xl px-4 md:px-8 lg:px-16 xl:px-32">
         <Section>
-          <PostBody components={mdxComponents} />
+          <MDXProvider components={mdxComponents}>
+            <PostBody />
+          </MDXProvider>
         </Section>
       </div>
     </main>

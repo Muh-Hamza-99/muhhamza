@@ -22,7 +22,10 @@ export const mdxComponents = {
   h3: (props: ComponentPropsWithoutRef<"h3">) => {
     const { className, ...rest } = props;
     return (
-      <h3 className={`mt-2 text-base font-semibold text-foreground ${className || ""}`} {...rest} />
+      <h3
+        className={`mt-2 text-base font-semibold text-foreground ${className || ""}`}
+        {...rest}
+      />
     );
   },
   p: (props: ComponentPropsWithoutRef<"p">) => {
@@ -63,9 +66,7 @@ export const mdxComponents = {
   },
   li: (props: ComponentPropsWithoutRef<"li">) => {
     const { className, ...rest } = props;
-    return (
-      <li className={`leading-relaxed ${className || ""}`} {...rest} />
-    );
+    return <li className={`leading-relaxed ${className || ""}`} {...rest} />;
   },
   blockquote: (props: ComponentPropsWithoutRef<"blockquote">) => {
     const { className, ...rest } = props;
