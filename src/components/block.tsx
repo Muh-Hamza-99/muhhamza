@@ -9,7 +9,17 @@ const Block = ({ block }: { block: BlockType }) => {
       <ul className="space-y-1">
         {block.items.map((item, index) => (
           <li key={index}>
-            <Link to={item.link} className="mr-2 inline-block underline underline-offset-2">
+            {item.logo && (
+              <img
+                src={item.logo}
+                alt={`${item.title}`}
+                className="inline-block w-5 h-5 mr-2 rounded-sm object-cover"
+              />
+            )}
+            <Link
+              to={item.link}
+              className="mr-2 inline-block underline underline-offset-2"
+            >
               {item.title}
             </Link>
             <span className="text-muted-foreground">{item.description}</span>

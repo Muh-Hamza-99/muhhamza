@@ -5,7 +5,7 @@ export const mdxComponents = {
     const { className, ...rest } = props;
     return (
       <h1
-        className={`mt-6 text-lg font-bold tracking-tight text-foreground first:mt-0 ${className || ""}`}
+        className={`mt-6 text-lg font-bold text-foreground first:mt-0 ${className || ""}`}
         {...rest}
       />
     );
@@ -14,7 +14,7 @@ export const mdxComponents = {
     const { className, ...rest } = props;
     return (
       <h2
-        className={`mt-4 font-semibold tracking-tight text-foreground${className || ""}`}
+        className={`mt-4 font-semibold text-foreground${className || ""}`}
         {...rest}
       />
     );

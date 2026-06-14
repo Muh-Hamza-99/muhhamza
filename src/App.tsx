@@ -1,14 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-// import BlogIndex from "./pages/BlogIndex";
-// import BlogLayout from "./pages/BlogLayout";
-import BlogPost from "./pages/BlogPost";
-import Home from "./pages/Home";
+import Blog from "./pages/blog";
+import Home from "./pages/home";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path=":slug" element={<BlogPost />} />
+      <Route path=":slug" element={<Blog />} />
     </Routes>
   );
 };
