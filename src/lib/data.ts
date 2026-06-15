@@ -15,39 +15,29 @@ export const blocks: Block[] = [
     header: "Projects",
     items: [
       {
-        title: "pyff",
-        description: "Utility Script",
-        link: "/pyff",
-      },
-      {
-        title: "Chaat",
-        description: "Chat Server",
-        link: "/chaat",
-      },
-      {
         title: "PikaDB",
         description: "LSM Database",
-        link: "/pikadb",
+        link: "https://github.com/Muh-Hamza-99/pikadb",
       },
       {
         title: "falcon",
         description: "Web Application",
-        link: "/falcon",
+        link: "https://tryfalcon.io",
       },
       {
         title: "Deframe",
         description: "Agent",
-        link: "/deframe",
+        link: "https://deframe.ai",
       },
       {
         title: "WLP4",
         description: "C Compiler",
-        link: "/wlp4",
+        link: "https://student.cs.uwaterloo.ca/~CS241/wlp4/",
       },
       {
         title: "UWPlanr",
         description: "Web Application",
-        link: "/uwplanr",
+        link: "https://uwplanr.netlify.app",
       },
     ],
   },
