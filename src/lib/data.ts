@@ -70,9 +70,20 @@ export const blocks: Block[] = [
       },
       {
         title: "Twimbit",
-        description: "AI & CX Research",
+        description: "Research Automation",
         link: "/twimbit",
         logo: "/twimbit.jpg",
+      },
+    ],
+  },
+  {
+    header: "Study",
+    items: [
+      {
+        title: "UWaterloo",
+        description: "Computer Science",
+        link: "https://uwaterloo.ca",
+        logo: "/uwaterloo.jpg"
       },
     ],
   },
@@ -94,67 +105,7 @@ export const blocks: Block[] = [
     ],
   },
   {
-    header: "Study",
-    items: [
-      {
-        title: "CS 135",
-        description: "Functional Programming",
-        link: "https://uwflow.com/course/cs135",
-      },
-      {
-        title: "CS 136",
-        description: "Algorithm Design & Data Abstraction",
-        link: "https://uwflow.com/course/cs136",
-      },
-      {
-        title: "CS 240",
-        description: "Data Structures & Data Management",
-        link: "https://uwflow.com/course/cs240",
-      },
-      {
-        title: "CS 241",
-        description: "Sequential Programming",
-        link: "https://uwflow.com/course/cs241",
-      },
-      {
-        title: "CS 245",
-        description: "Logic & Computation",
-        link: "https://uwflow.com/course/cs245",
-      },
-      {
-        title: "CS 246",
-        description: "Object-Oriented Programming",
-        link: "https://uwflow.com/course/cs246",
-      },
-      {
-        title: "CS 251",
-        description: "Computer Organization & Design",
-        link: "https://uwflow.com/course/cs251",
-      },
-      {
-        title: "CS 341",
-        description: "Algorithms",
-        link: "https://uwflow.com/course/cs341",
-      },
-      {
-        title: "CS 348",
-        description: "Database Management",
-        link: "https://uwflow.com/course/cs348",
-      },
-      {
-        title: "CS 350",
-        description: "Operating Systems",
-        link: "https://uwflow.com/course/cs350",
-      },
-      {
-        title: "MATH 239",
-        description: "Combinatorics & Graph Theory",
-        link: "https://uwflow.com/course/math239",
-      },
-    ],
-  },
-  {
-    header: "Achievements",
+    header: "Awards",
     items: [
       {
         title: "Scholarship",
