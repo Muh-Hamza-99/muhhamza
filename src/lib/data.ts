@@ -77,27 +77,114 @@ export const blocks: Block[] = [
     ],
   },
   {
-    header: "School",
+    header: "Hackathons",
     items: [
       {
-        title: "2B",
-        description: "Summer 2025",
-        link: "/2b",
+        title: "UmmahHacks",
+        description: "ComfortCare (2nd place)",
+        link: "#",
+        logo: "/ummahhacks.jpg"
       },
       {
-        title: "2A",
-        description: "Fall 2024",
-        link: "/2a",
+        title: "HTN 2023",
+        description: "Dripbot (Top 32)",
+        link: "#",
+        logo: "/hackthenorth.jpg"
+      },
+    ],
+  },
+  {
+    header: "Study",
+    items: [
+      {
+        title: "CS 135",
+        description: "Functional Programming",
+        link: "https://uwflow.com/course/cs135",
       },
       {
-        title: "1B",
-        description: "Winter 2024",
-        link: "/1b",
+        title: "CS 136",
+        description: "Algorithm Design & Data Abstraction",
+        link: "https://uwflow.com/course/cs136",
       },
       {
-        title: "1A",
-        description: "Fall 2023",
-        link: "/1a",
+        title: "CS 240",
+        description: "Data Structures & Data Management",
+        link: "https://uwflow.com/course/cs240",
+      },
+      {
+        title: "CS 241",
+        description: "Sequential Programming",
+        link: "https://uwflow.com/course/cs241",
+      },
+      {
+        title: "CS 245",
+        description: "Logic & Computation",
+        link: "https://uwflow.com/course/cs245",
+      },
+      {
+        title: "CS 246",
+        description: "Object-Oriented Programming",
+        link: "https://uwflow.com/course/cs246",
+      },
+      {
+        title: "CS 251",
+        description: "Computer Organization & Design",
+        link: "https://uwflow.com/course/cs251",
+      },
+      {
+        title: "CS 341",
+        description: "Algorithms",
+        link: "https://uwflow.com/course/cs341",
+      },
+      {
+        title: "CS 348",
+        description: "Database Management",
+        link: "https://uwflow.com/course/cs348",
+      },
+      {
+        title: "CS 350",
+        description: "Operating Systems",
+        link: "https://uwflow.com/course/cs350",
+      },
+      {
+        title: "MATH 239",
+        description: "Combinatorics & Graph Theory",
+        link: "https://uwflow.com/course/math239",
+      },
+    ],
+  },
+  {
+    header: "Achievements",
+    items: [
+      {
+        title: "Scholarship",
+        description: "Mathematics Global Scholarship",
+        link: "#",
+      },
+      {
+        title: "Distinction",
+        description: "2023, 2024, 2025",
+        link: "#",
+      },
+      {
+        title: "Scholarship",
+        description: "President's Distinction",
+        link: "#",
+      },
+    ],
+  },
+  {
+    header: "Other",
+    items: [
+      {
+        title: "Sports",
+        description: "Football, Cricket, Squash, Table Tennis",
+        link: "#",
+      },
+      {
+        title: "Languages",
+        description: "English, Urdu",
+        link: "#",
       },
     ],
   },
