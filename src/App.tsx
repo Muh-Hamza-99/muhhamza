@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import Blog from "./pages/blog";
 import Root from "./pages/root";
+import UWaterloo from "./pages/uwaterloo";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Root />} />
-      <Route path=":slug" element={<Blog />} />
+      <Route path="/uwaterloo" element={<UWaterloo /> } />
     </Routes>
   );
 };

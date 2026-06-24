@@ -82,7 +82,7 @@ export const blocks: Block[] = [
       {
         title: "UWaterloo",
         description: "Computer Science",
-        link: "https://uwaterloo.ca",
+        link: "/uwaterloo",
         logo: "/uwaterloo.jpg"
       },
     ],
@@ -101,6 +101,17 @@ export const blocks: Block[] = [
         description: "Dripbot (Top 32)",
         link: "#",
         logo: "/hackthenorth.jpg"
+      },
+    ],
+  },
+  {
+    header: "Activites",
+    items: [
+      {
+        title: "PSA",
+        description: "Operations",
+        link: "#",
+        logo: "/psa.jpg"
       },
     ],
   },
