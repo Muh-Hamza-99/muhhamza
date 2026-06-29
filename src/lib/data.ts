@@ -2,7 +2,7 @@ type Item = {
   title: string;
   link: string;
   description: string;
-  logo?: string;
+  logos?: string[];
 };
 
 export type Block = {
@@ -12,6 +12,16 @@ export type Block = {
 
 export const blocks: Block[] = [
   {
+    header: "Random",
+    items: [
+      {
+        title: "WC26",
+        description: "Eliminator Predictions",
+        link: "/wc26",
+      },
+    ],
+  },
+  {
     header: "Projects",
     items: [
       {
@@ -19,6 +29,11 @@ export const blocks: Block[] = [
         description: "LSM Database",
         link: "https://github.com/Muh-Hamza-99/pikadb",
       },
+      // {
+      //   title: "twig",
+      //   description: "KV Log",
+      //   link: "https://github.com/Muh-Hamza-99/twig",
+      // },
       {
         title: "falcon",
         description: "Web Application",
@@ -39,6 +54,16 @@ export const blocks: Block[] = [
         description: "Web Application",
         link: "https://uwplanr.netlify.app",
       },
+      // {
+      //   title: "carbon.sh",
+      //   description: "CLI & API",
+      //   link: "https://github.com/Muh-Hamza-99/wudroid",
+      // },
+      // {
+      //   title: "Wudroid",
+      //   description: "Discord Bot",
+      //   link: "https://github.com/Muh-Hamza-99/wudroid",
+      // },
     ],
   },
   {
@@ -48,31 +73,31 @@ export const blocks: Block[] = [
         title: "StackAdapt",
         description: "Fall 2026",
         link: "/stackadapt",
-        logo: "/stackadapt.jpg",
+        logos: ["/stackadapt.jpg"],
       },
       {
         title: "Shopify",
         description: "Merchant Authentication",
         link: "/shopify",
-        logo: "/shopify.jpg",
+        logos: ["/shopify.jpg"],
       },
       {
         title: "Vidyard",
         description: "AI Avatars",
         link: "/vidyard",
-        logo: "/vidyard.jpg",
+        logos: ["/vidyard.jpg"],
       },
       {
         title: "Nokia",
         description: "Autonomous Networks",
         link: "/nokia",
-        logo: "/nokia.jpg",
+        logos: ["/nokia.jpg"],
       },
       {
         title: "Twimbit",
         description: "Research Automation",
         link: "/twimbit",
-        logo: "/twimbit.jpg",
+        logos: ["/twimbit.jpg"],
       },
     ],
   },
@@ -83,7 +108,7 @@ export const blocks: Block[] = [
         title: "UWaterloo",
         description: "Computer Science",
         link: "/uwaterloo",
-        logo: "/uwaterloo.jpg"
+        logos: ["/uwaterloo.jpg"],
       },
     ],
   },
@@ -93,14 +118,14 @@ export const blocks: Block[] = [
       {
         title: "UmmahHacks",
         description: "ComfortCare (2nd place)",
-        link: "#",
-        logo: "/ummahhacks.jpg"
+        link: "https://devpost.com/software/comfortcare",
+        logos: ["/ummahhacks.jpg"],
       },
       {
         title: "HTN 2023",
         description: "Dripbot (Top 32)",
-        link: "#",
-        logo: "/hackthenorth.jpg"
+        link: "https://devpost.com/software/dripbot-sxj301",
+        logos: ["/hackthenorth.jpg"],
       },
     ],
   },
@@ -111,7 +136,7 @@ export const blocks: Block[] = [
         title: "PSA",
         description: "Operations",
         link: "#",
-        logo: "/psa.jpg"
+        logos: ["/psa.jpg"],
       },
     ],
   },
