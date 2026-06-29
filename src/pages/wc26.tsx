@@ -7,149 +7,149 @@ const matches: BlockType[] = [
     header: "Round of 32",
     items: [
       {
-        title: "1-0",
-        description: "2-0",
+        title: "Canada vs. South Africa",
+        description: "1-0 | 2-0",
         link: "#",
-        logos: [
-          "https://flagsapi.com/CA/flat/64.png",
-          "https://flagsapi.com/ZA/flat/64.png",
-        ],
+        // logos: [
+        //   "https://flagsapi.com/CA/flat/64.png",
+        //   "https://flagsapi.com/ZA/flat/64.png",
+        // ],
       },
       {
-        title: "TBD",
-        description: "3-2",
+        title: "Brazil vs. Japan",
+        description: "TBD | 3-2",
         link: "#",
-        logos: [
-          "https://flagsapi.com/BR/flat/64.png",
-          "https://flagsapi.com/JP/flat/64.png",
-        ],
+        // logos: [
+        //   "https://flagsapi.com/BR/flat/64.png",
+        //   "https://flagsapi.com/JP/flat/64.png",
+        // ],
       },
       {
-        title: "TBD",
-        description: "3-1",
+        title: "Germany vs. Paraguay",
+        description: "TBD | 3-1",
         link: "#",
-        logos: [
-          "https://flagsapi.com/DE/flat/64.png",
-          "https://flagsapi.com/PY/flat/64.png",
-        ],
+        // logos: [
+        //   "https://flagsapi.com/DE/flat/64.png",
+        //   "https://flagsapi.com/PY/flat/64.png",
+        // ],
       },
       {
-        title: "TBD",
-        description: "1-2",
+        title: "Netherlands vs. Morocco",
+        description: "TBD | 1-2",
         link: "#",
-        logos: [
-          "https://flagsapi.com/NL/flat/64.png",
-          "https://flagsapi.com/MA/flat/64.png",
-        ],
+        // logos: [
+        //   "https://flagsapi.com/NL/flat/64.png",
+        //   "https://flagsapi.com/MA/flat/64.png",
+        // ],
       },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/CI/flat/64.png",
-          "https://flagsapi.com/NO/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/FR/flat/64.png",
-          "https://flagsapi.com/SE/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/MX/flat/64.png",
-          "https://flagsapi.com/EC/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/GB/flat/64.png",
-          "https://flagsapi.com/CD/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/BE/flat/64.png",
-          "https://flagsapi.com/SN/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/US/flat/64.png",
-          "https://flagsapi.com/BA/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/ES/flat/64.png",
-          "https://flagsapi.com/AT/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/PT/flat/64.png",
-          "https://flagsapi.com/HR/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/CH/flat/64.png",
-          "https://flagsapi.com/DZ/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/AU/flat/64.png",
-          "https://flagsapi.com/EG/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/AR/flat/64.png",
-          "https://flagsapi.com/CV/flat/64.png",
-        ],
-      },
-      {
-        title: "TBD",
-        description: "TBD",
-        link: "#",
-        logos: [
-          "https://flagsapi.com/CO/flat/64.png",
-          "https://flagsapi.com/GH/flat/64.png",
-        ],
-      },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/CI/flat/64.png",
+    //       "https://flagsapi.com/NO/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/FR/flat/64.png",
+    //       "https://flagsapi.com/SE/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/MX/flat/64.png",
+    //       "https://flagsapi.com/EC/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/GB/flat/64.png",
+    //       "https://flagsapi.com/CD/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/BE/flat/64.png",
+    //       "https://flagsapi.com/SN/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/US/flat/64.png",
+    //       "https://flagsapi.com/BA/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/ES/flat/64.png",
+    //       "https://flagsapi.com/AT/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/PT/flat/64.png",
+    //       "https://flagsapi.com/HR/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/CH/flat/64.png",
+    //       "https://flagsapi.com/DZ/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/AU/flat/64.png",
+    //       "https://flagsapi.com/EG/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/AR/flat/64.png",
+    //       "https://flagsapi.com/CV/flat/64.png",
+    //     ],
+    //   },
+    //   {
+    //     title: "TBD",
+    //     description: "TBD",
+    //     link: "#",
+    //     logos: [
+    //       "https://flagsapi.com/CO/flat/64.png",
+    //       "https://flagsapi.com/GH/flat/64.png",
+    //     ],
+    //   },
     ],
   },
   {
