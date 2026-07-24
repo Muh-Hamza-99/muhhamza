@@ -50,18 +50,6 @@ export const MAIN: Block[] = [
     header: "Work",
     items: [
       {
-        title: "Whatnot",
-        description: "Live Orders",
-        link: "#",
-        logo: "https://res.cloudinary.com/daaym43c2/image/upload/Whatnot.jpg",
-      },
-      {
-        title: "Stripe",
-        description: "Link Wallet",
-        link: "#",
-        logo: "https://res.cloudinary.com/daaym43c2/image/upload/Stripe.jpg",
-      },
-      {
         title: "UWaterloo",
         description: "Data Systems Group",
         link: "#",

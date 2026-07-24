@@ -54,56 +54,56 @@ export const TERMS: Block[] = [
         description: "Database Management",
         link: "https://uwflow.com/course/cs348",
       },
-      {
-        title: "CS 343",
-        description: "Concurrent Programming",
-        link: "https://uwflow.com/course/cs343",
-      },
+      // {
+      //   title: "CS 343",
+      //   description: "Concurrent Programming",
+      //   link: "https://uwflow.com/course/cs343",
+      // },
       {
         title: "CS 350",
         description: "Operating Systems",
         link: "https://uwflow.com/course/cs350",
       },
-      {
-        title: "CS 370",
-        description: "Numerical Computation",
-        link: "https://uwflow.com/course/cs370",
-      },
-      {
-        title: "CS 450",
-        description: "Computer Architecture",
-        link: "https://uwflow.com/course/cs450",
-      },
-      {
-        title: "CS 451",
-        description: "Data-Intenstive Distributed Computing",
-        link: "https://uwflow.com/course/cs451",
-      },
-      {
-        title: "CS 454",
-        description: "Distributed Systems",
-        link: "https://uwflow.com/course/cs454",
-      },
-      {
-        title: "CS 456",
-        description: "Computer Networks",
-        link: "https://uwflow.com/course/cs456",
-      },
-      {
-        title: "CS 476",
-        description: "Numerical Computation for Financial Modelling",
-        link: "https://uwflow.com/course/cs476",
-      },
-      {
-        title: "CS 479",
-        description: "Neural Networks",
-        link: "https://uwflow.com/course/cs479",
-      },
-      {
-        title: "CS 489",
-        description: "Natural Language Processing",
-        link: "https://uwflow.com/course/cs489",
-      },
+      // {
+      //   title: "CS 370",
+      //   description: "Numerical Computation",
+      //   link: "https://uwflow.com/course/cs370",
+      // },
+      // {
+      //   title: "CS 450",
+      //   description: "Computer Architecture",
+      //   link: "https://uwflow.com/course/cs450",
+      // },
+      // {
+      //   title: "CS 451",
+      //   description: "Data-Intenstive Distributed Computing",
+      //   link: "https://uwflow.com/course/cs451",
+      // },
+      // {
+      //   title: "CS 454",
+      //   description: "Distributed Systems",
+      //   link: "https://uwflow.com/course/cs454",
+      // },
+      // {
+      //   title: "CS 456",
+      //   description: "Computer Networks",
+      //   link: "https://uwflow.com/course/cs456",
+      // },
+      // {
+      //   title: "CS 476",
+      //   description: "Numerical Computation for Financial Modelling",
+      //   link: "https://uwflow.com/course/cs476",
+      // },
+      // {
+      //   title: "CS 479",
+      //   description: "Neural Networks",
+      //   link: "https://uwflow.com/course/cs479",
+      // },
+      // {
+      //   title: "CS 489",
+      //   description: "Natural Language Processing",
+      //   link: "https://uwflow.com/course/cs489",
+      // },
     ],
   },
   {
@@ -134,11 +134,11 @@ export const TERMS: Block[] = [
         description: "Calculus II",
         link: "https://uwflow.com/course/math138",
       },
-      {
-        title: "MATH 237",
-        description: "Calculus III",
-        link: "https://uwflow.com/course/math237",
-      },
+      // {
+      //   title: "MATH 237",
+      //   description: "Calculus III",
+      //   link: "https://uwflow.com/course/math237",
+      // },
       {
         title: "MATH 239",
         description: "Combinatorics",
@@ -159,31 +159,31 @@ export const TERMS: Block[] = [
         description: "Statistics",
         link: "https://uwflow.com/course/stat231",
       },
-      {
-        title: "STAT 330",
-        description: "Mathematical Statistics",
-        link: "https://uwflow.com/course/stat330",
-      },
-      {
-        title: "STAT 331",
-        description: "Applied Linear Models",
-        link: "https://uwflow.com/course/stat331",
-      },
-      {
-        title: "STAT 333",
-        description: "Stochastic Processes",
-        link: "https://uwflow.com/course/stat333",
-      },
-      {
-        title: "STAT 340",
-        description: "Stochastic Simulation Methods",
-        link: "https://uwflow.com/course/stat340",
-      },
-      {
-        title: "STAT 443",
-        description: "Forecasting",
-        link: "https://uwflow.com/course/stat443",
-      },
+      // {
+      //   title: "STAT 330",
+      //   description: "Mathematical Statistics",
+      //   link: "https://uwflow.com/course/stat330",
+      // },
+      // {
+      //   title: "STAT 331",
+      //   description: "Applied Linear Models",
+      //   link: "https://uwflow.com/course/stat331",
+      // },
+      // {
+      //   title: "STAT 333",
+      //   description: "Stochastic Processes",
+      //   link: "https://uwflow.com/course/stat333",
+      // },
+      // {
+      //   title: "STAT 340",
+      //   description: "Stochastic Simulation Methods",
+      //   link: "https://uwflow.com/course/stat340",
+      // },
+      // {
+      //   title: "STAT 443",
+      //   description: "Forecasting",
+      //   link: "https://uwflow.com/course/stat443",
+      // },
     ]
   },
   {
@@ -199,36 +199,36 @@ export const TERMS: Block[] = [
         description: "Microeconomic Theory I",
         link: "https://uwflow.com/course/econ201",
       },
-      {
-        title: "ECON 212",
-        description: "Game Theory",
-        link: "https://uwflow.com/course/econ212",
-      },
+      // {
+      //   title: "ECON 212",
+      //   description: "Game Theory",
+      //   link: "https://uwflow.com/course/econ212",
+      // },
       {
         title: "ECON 371",
         description: "Business Finance I",
         link: "https://uwflow.com/course/econ371",
       },
-      {
-        title: "ECON 372",
-        description: "Business Finance II",
-        link: "https://uwflow.com/course/econ372",
-      },
+      // {
+      //   title: "ECON 372",
+      //   description: "Business Finance II",
+      //   link: "https://uwflow.com/course/econ372",
+      // },
     ],
   },
   {
     header: "Other",
     items: [
-      {
-        title: "MSE 541",
-        description: "Search Engines",
-        link: "https://uwflow.com/course/mse541",
-      },
-      {
-        title: "ENGL 108D",
-        description: "Digital Lives",
-        link: "https://uwflow.com/course/engl108d",
-      },
+      // {
+      //   title: "MSE 541",
+      //   description: "Search Engines",
+      //   link: "https://uwflow.com/course/mse541",
+      // },
+      // {
+      //   title: "ENGL 108D",
+      //   description: "Digital Lives",
+      //   link: "https://uwflow.com/course/engl108d",
+      // },
       {
         title: "ENGL 109",
         description: "Academic Writing",
@@ -239,21 +239,21 @@ export const TERMS: Block[] = [
         description: "Environmental Science",
         link: "https://uwflow.com/course/earth122",
       },
-      {
-        title: "HEALTH 105",
-        description: "Mental Health Literacy",
-        link: "https://uwflow.com/course/health105",
-      },
+      // {
+      //   title: "HEALTH 105",
+      //   description: "Mental Health Literacy",
+      //   link: "https://uwflow.com/course/health105",
+      // },
       {
         title: "SI 121R",
         description: "Islam in the World",
         link: "https://uwflow.com/course/si121r",
       },
-      {
-        title: "PSCI 359",
-        description: "Politics in South Asia",
-        link: "https://uwflow.com/course/psci359",
-      },
+      // {
+      //   title: "PSCI 359",
+      //   description: "Politics in South Asia",
+      //   link: "https://uwflow.com/course/psci359",
+      // },
     ],
   },
 ];
