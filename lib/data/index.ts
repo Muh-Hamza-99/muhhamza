@@ -50,12 +50,6 @@ export const MAIN: Block[] = [
     header: "Work",
     items: [
       {
-        title: "UWaterloo",
-        description: "Data Systems Group",
-        link: "#",
-        logo: "/uwaterloo.jpg",
-      },
-      {
         title: "StackAdapt",
         description: "AdTech",
         link: "#",
@@ -122,13 +116,13 @@ export const MAIN: Block[] = [
     ],
   },
   {
-    header: "Volunteering",
+    header: "Clubs",
     items: [
       {
-        title: "STAT 231",
-        description: "Teaching Assistant",
-        link: "#",
-        logo: "/mathsoc.jpg",
+        title: "UWCC",
+        description: "Bowling All Rounder",
+        link: "https://www.cricclubs.com/UWCCTapeballIntramurals/user/Ylt-jeToRyLJhvEd2LMCBw?playerName=Muhammad+Hamza",
+        logo: "/uwcc.jpg",
       },
       {
         title: "PSA",
