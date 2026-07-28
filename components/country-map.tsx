@@ -23,7 +23,7 @@ interface CountryConfig {
   iso3: string;
   center: [number, number];
   zoom: number;
-  markerPos: [number, number];
+  markerPositions: [number, number][];
 }
 
 export default function CountryCard({ config }: { config: CountryConfig }) {
@@ -73,10 +73,12 @@ export default function CountryCard({ config }: { config: CountryConfig }) {
                 opacity: 0.85,
               })}
             />
-            <Marker
-              position={config.markerPos}
-              icon={createGlowingIcon("#144a67")}
-            />
+            {config.markerPositions.map((markerPos, index) => (
+              <Marker
+                position={markerPos}
+                icon={createGlowingIcon("#144a67")}
+              />
+            ))}
           </MapContainer>
         ) : (
           <div className="w-full h-full flex items-center justify-center text-xs">

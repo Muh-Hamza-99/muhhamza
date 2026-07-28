@@ -28,7 +28,11 @@ const Root = () => {
             iso3: "CAN",
             center: [55.1304, -95.3468] as [number, number],
             zoom: 3,
-            markerPos: [43.4667, -76.5167] as [number, number],
+            markerPositions: [
+              [43.4667, -76.5167], // Waterloo
+              [45.4215, -72.6972], // Ottawa
+              [43.200, -77.9000]
+            ] as [number, number][],
           }}
         />
       </Section>
