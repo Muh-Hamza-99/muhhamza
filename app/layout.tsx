@@ -23,12 +23,12 @@ export default function RootLayout({
       lang="en"
       className={`${bricolageGrotesque.variable} h-full antialiased`}
     >
-      <main className="min-h-screen flex items-center bg-background text-foreground font-sans">
+      <body className="min-h-screen flex items-center bg-background text-foreground font-sans">
         <div className="w-full mx-auto max-w-3xl p-4 md:px-8 lg:px-16 xl:px-32">
           <Navbar />
           {children}
         </div>
-      </main>
+      </body>
     </html>
   );
 }

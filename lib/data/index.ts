@@ -5,6 +5,11 @@ export const MAIN: Block[] = [
     header: "Projects",
     items: [
       {
+        title: "Payment Engine",
+        description: "Distributed Systems",
+        link: "/w/financial-ledger",
+      },
+      {
         title: "PikaDB",
         description: "LSM Database",
         link: "https://github.com/Muh-Hamza-99/pikadb",
