@@ -30,6 +30,11 @@ export const MAIN: Block[] = [
         link: "https://deframe.ai",
       },
       {
+        title: "stoicvalues",
+        description: "Instagram Bot",
+        link: "https://www.instagram.com/_stoicvalues/",
+      },
+      {
         title: "WLP4",
         description: "C Compiler",
         link: "https://student.cs.uwaterloo.ca/~CS241/wlp4/",
@@ -107,13 +112,19 @@ export const MAIN: Block[] = [
     header: "Hackathons",
     items: [
       {
+        title: "HTN 2026",
+        description: "September 2026",
+        link: "https://devpost.com/software/dripbot-sxj301",
+        logo: "/hackthenorth.jpg",
+      },
+      {
         title: "UmmahHacks",
         description: "ComfortCare (2nd place)",
         link: "https://devpost.com/software/comfortcare",
         logo: "/ummahhacks.jpg",
       },
       {
-        title: "HTN 2023",
+        title: "HTN 2025",
         description: "Dripbot (Top 32)",
         link: "https://devpost.com/software/dripbot-sxj301",
         logo: "/hackthenorth.jpg",
