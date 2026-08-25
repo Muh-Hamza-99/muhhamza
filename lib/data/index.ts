@@ -4,6 +4,11 @@ export const MAIN: Block[] = [
   {
     header: "Projects",
     items: [
+      {
+        title: "Whatcode",
+        description: "Coding Agent",
+        link: "https://github.com/Muh-Hamza-99/whatcode",
+      },
       // {
       //   title: "Payment Engine",
       //   description: "Distributed Systems",
@@ -59,6 +64,12 @@ export const MAIN: Block[] = [
   {
     header: "Work",
     items: [
+      {
+        title: "StackAdapt",
+        description: "AdTech",
+        link: "#",
+        logo: "/stackadapt.jpg",
+      },
       {
         title: "Shopify",
         description: "Merchant Authentication",
