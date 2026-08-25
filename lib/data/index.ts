@@ -61,7 +61,7 @@ export const MAIN: Block[] = [
     items: [
       {
         title: "StackAdapt",
-        description: "AdTech",
+        description: "Core Infrastructure",
         link: "#",
         logo: "/stackadapt.jpg",
       },
