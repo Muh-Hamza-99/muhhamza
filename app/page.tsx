@@ -19,10 +19,10 @@ const CountryMap = dynamic(() => import("../components/country-map"), {
 const Root = () => {
   return (
     <div className="flex flex-col space-y-2 mt-2">
+      <Projects />
       {MAIN.map((block, index) => (
         <div key={index} className="flex flex-col space-y-2">
           <Block block={block} />
-          {block.header === "Projects" && <Projects />}
         </div>
       ))}
       <Section>

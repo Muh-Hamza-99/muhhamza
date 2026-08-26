@@ -1,93 +1,33 @@
 import type { Block, Project } from "../../types/data";
 
-export const FEATURED_PROJECTS: Project[] = [
+export const PROJECTS: Project[] = [
   {
     title: "Whatcode",
     description: "Coding Agent",
-    image: "/projects/whatcode.svg",
+    image: "/placeholder.svg",
     link: "https://github.com/Muh-Hamza-99/whatcode",
-  },
-  {
-    title: "PikaDB",
-    description: "LSM Database",
-    image: "/projects/pikadb.svg",
-    link: "https://github.com/Muh-Hamza-99/pikadb",
   },
   {
     title: "falcon",
     description: "Web Application",
-    image: "/projects/falcon.svg",
+    image: "/placeholder.svg",
     link: "https://tryfalcon.io",
+  },
+  {
+    title: "PikaDB",
+    description: "LSM Database",
+    image: "/placeholder.svg",
+    link: "https://github.com/Muh-Hamza-99/pikadb",
   },
   {
     title: "Deframe",
     description: "Agent",
-    image: "/projects/deframe.svg",
+    image: "/placeholder.svg",
     link: "https://deframe.ai",
   },
 ];
 
 export const MAIN: Block[] = [
-  {
-    header: "Projects",
-    items: [
-      {
-        title: "Whatcode",
-        description: "Coding Agent",
-        link: "https://github.com/Muh-Hamza-99/whatcode",
-      },
-      // {
-      //   title: "Payment Engine",
-      //   description: "Distributed Systems",
-      //   link: "/w/financial-ledger",
-      // },
-      {
-        title: "PikaDB",
-        description: "LSM Database",
-        link: "https://github.com/Muh-Hamza-99/pikadb",
-      },
-      {
-        title: "twig",
-        description: "KV Database",
-        link: "https://github.com/Muh-Hamza-99/twig",
-      },
-      {
-        title: "falcon",
-        description: "Web Application",
-        link: "https://tryfalcon.io",
-      },
-      {
-        title: "Deframe",
-        description: "Agent",
-        link: "https://deframe.ai",
-      },
-      {
-        title: "stoicvalues",
-        description: "Instagram Bot",
-        link: "https://www.instagram.com/_stoicvalues/",
-      },
-      {
-        title: "WLP4",
-        description: "C Compiler",
-        link: "https://student.cs.uwaterloo.ca/~CS241/wlp4/",
-      },
-      {
-        title: "UWPlanr",
-        description: "Web Application",
-        link: "https://uwplanr.netlify.app",
-      },
-      // {
-      //   title: "carbon.sh",
-      //   description: "CLI & API",
-      //   link: "https://github.com/Muh-Hamza-99/wudroid",
-      // },
-      {
-        title: "Wudroid",
-        description: "Discord Bot",
-        link: "https://github.com/Muh-Hamza-99/wudroid",
-      },
-    ],
-  },
   {
     header: "Work",
     items: [

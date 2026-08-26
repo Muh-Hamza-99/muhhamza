@@ -7,7 +7,7 @@ const Card = ({ project }: { project: Project }) => {
       href={project.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-ring"
+      className="group flex flex-col overflow-hidden rounded-lg border border-border transition-colors hover:border-ring"
     >
       <img
         src={project.image}
