@@ -10,19 +10,19 @@ export const PROJECTS: Project[] = [
   {
     title: "falcon",
     description: "Web Application",
-    image: "/placeholder.svg",
+    image: "/falcon.png",
     link: "https://tryfalcon.io",
   },
   {
     title: "PikaDB",
     description: "LSM Database",
-    image: "/placeholder.svg",
+    image: "/pikadb.png",
     link: "https://github.com/Muh-Hamza-99/pikadb",
   },
   {
     title: "Deframe",
     description: "Agent",
-    image: "/placeholder.svg",
+    image: "/deframe.png",
     link: "https://deframe.ai",
   },
 ];
