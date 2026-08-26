@@ -1,4 +1,31 @@
-import type { Block } from "../../types/data";
+import type { Block, Project } from "../../types/data";
+
+export const FEATURED_PROJECTS: Project[] = [
+  {
+    title: "Whatcode",
+    description: "Coding Agent",
+    image: "/projects/whatcode.svg",
+    link: "https://github.com/Muh-Hamza-99/whatcode",
+  },
+  {
+    title: "PikaDB",
+    description: "LSM Database",
+    image: "/projects/pikadb.svg",
+    link: "https://github.com/Muh-Hamza-99/pikadb",
+  },
+  {
+    title: "falcon",
+    description: "Web Application",
+    image: "/projects/falcon.svg",
+    link: "https://tryfalcon.io",
+  },
+  {
+    title: "Deframe",
+    description: "Agent",
+    image: "/projects/deframe.svg",
+    link: "https://deframe.ai",
+  },
+];
 
 export const MAIN: Block[] = [
   {

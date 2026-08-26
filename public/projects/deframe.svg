@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <rect width="600" height="300" fill="rgb(235, 238, 242)" />
+  <rect x="40" y="120" width="40" height="4" rx="2" fill="rgb(26, 98, 137)" />
+  <text x="40" y="180" font-family="ui-sans-serif, system-ui, sans-serif" font-size="52" font-weight="700" fill="rgb(26, 98, 137)">Deframe</text>
+  <text x="42" y="214" font-family="ui-monospace, monospace" font-size="18" fill="rgb(90, 101, 115)">Agent</text>
+</svg>
