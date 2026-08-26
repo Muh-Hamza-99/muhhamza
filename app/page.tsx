@@ -2,6 +2,7 @@
 
 import Section from "@/components/section";
 import Block from "../components/block";
+import Projects from "../components/projects";
 import { MAIN } from "../lib/data";
 
 import dynamic from "next/dynamic";
@@ -18,8 +19,11 @@ const CountryMap = dynamic(() => import("../components/country-map"), {
 const Root = () => {
   return (
     <div className="flex flex-col space-y-2 mt-2">
+      <Projects />
       {MAIN.map((block, index) => (
-        <Block key={index} block={block} />
+        <div key={index} className="flex flex-col space-y-2">
+          <Block block={block} />
+        </div>
       ))}
       <Section>
         <CountryMap
