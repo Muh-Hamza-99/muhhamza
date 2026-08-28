@@ -1,6 +1,21 @@
 import type { Block } from "../../types/data";
 
 export const TERMS: Block[] = [
+  {
+    header: "3B",
+    items: [
+      {
+        title: "CS 454",
+        description: "Distributed Systems",
+        link: "https://uwflow.com/course/cs454",
+      },
+      {
+        title: "CS 456",
+        description: "Computer Networks",
+        link: "https://uwflow.com/course/cs456",
+      },
+    ],
+  },
   // {
   //   header: "3B",
   //   items: [
