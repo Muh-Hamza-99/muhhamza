@@ -3,113 +3,111 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: rgb(247, 247, 248);
-    --foreground: rgb(26, 37, 48);
-    --card: rgb(255, 255, 255);
-    --card-foreground: rgb(26, 37, 48);
-    --popover: rgb(255, 255, 255);
-    --popover-foreground: rgb(26, 37, 48);
-    --primary: rgb(26, 98, 137);
-    --primary-foreground: rgb(255, 255, 255);
-    --secondary: rgb(235, 238, 242);
-    --secondary-foreground: rgb(26, 37, 48);
-    --muted: rgb(235, 238, 242);
-    --muted-foreground: rgb(90, 101, 115);
-    --accent: rgb(217, 230, 238);
-    --accent-foreground: rgb(15, 72, 102);
-    --destructive: rgb(184, 65, 60);
-    --destructive-foreground: rgb(255, 255, 255);
-    --border: rgb(219, 224, 230);
-    --input: rgb(219, 224, 230);
-    --ring: rgb(29, 108, 150);
-    --chart-1: rgb(29, 108, 150);
-    --chart-2: rgb(131, 196, 231);
-    --chart-3: rgb(20, 74, 103);
-    --chart-4: rgb(47, 122, 92);
-    --chart-5: rgb(217, 162, 76);
-    --sidebar: rgb(241, 243, 246);
-    --sidebar-foreground: rgb(26, 37, 48);
-    --sidebar-primary: rgb(26, 98, 137);
-    --sidebar-primary-foreground: rgb(255, 255, 255);
-    --sidebar-accent: rgb(217, 230, 238);
-    --sidebar-accent-foreground: rgb(15, 72, 102);
-    --sidebar-border: rgb(219, 224, 230);
-    --sidebar-ring: rgb(29, 108, 150);
-    --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-    --font-mono: "Bricolage Mono", ui-monospace, SF Mono, SF Mono-Regular, Consolas,
-      "Liberation Mono", Menlo, Courier, monospace;
-    --font-urdu: "Noto Nastaliq Urdu", serif;
-    --radius: 0.625rem;
-    --shadow-x: 0px;
-    --shadow-y: 1px;
-    --shadow-blur: 4px;
-    --shadow-spread: -1px;
-    --shadow-opacity: 0.05;
-    --shadow-color: #1a2530;
-    --shadow-2xs: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.03);
-    --shadow-xs: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.03);
-    --shadow-sm: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.05), 0px 1px 2px -2px hsl(210 29.7297% 14.5098% / 0.05);
-    --shadow: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.05), 0px 1px 2px -2px hsl(210 29.7297% 14.5098% / 0.05);
-    --shadow-md: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.05), 0px 2px 4px -2px hsl(210 29.7297% 14.5098% / 0.05);
-    --shadow-lg: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.05), 0px 4px 6px -2px hsl(210 29.7297% 14.5098% / 0.05);
-    --shadow-xl: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.05), 0px 8px 10px -2px hsl(210 29.7297% 14.5098% / 0.05);
-    --shadow-2xl: 0px 1px 4px -1px hsl(210 29.7297% 14.5098% / 0.13);
-    --tracking-normal: 0em;
-    --spacing: 0.25rem;
-  }
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(51, 51, 51);
+  --card: rgb(255, 255, 255);
+  --card-foreground: rgb(51, 51, 51);
+  --popover: rgb(255, 255, 255);
+  --popover-foreground: rgb(51, 51, 51);
+  --primary: rgb(50, 128, 255);
+  --primary-foreground: rgb(255, 255, 255);
+  --secondary: rgb(242, 244, 247);
+  --secondary-foreground: rgb(70, 84, 104);
+  --muted: rgb(249, 250, 251);
+  --muted-foreground: rgb(103, 113, 132);
+  --accent: rgb(223, 242, 255);
+  --accent-foreground: rgb(8, 48, 160);
+  --destructive: rgb(255, 52, 52);
+  --destructive-foreground: rgb(255, 255, 255);
+  --border: rgb(228, 231, 236);
+  --input: rgb(228, 231, 236);
+  --ring: rgb(50, 128, 255);
+  --chart-1: rgb(50, 128, 255);
+  --chart-2: rgb(17, 92, 255);
+  --chart-3: rgb(0, 64, 245);
+  --chart-4: rgb(1, 49, 204);
+  --chart-5: rgb(8, 48, 160);
+  --sidebar: rgb(249, 250, 251);
+  --sidebar-foreground: rgb(51, 51, 51);
+  --sidebar-primary: rgb(50, 128, 255);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(223, 242, 255);
+  --sidebar-accent-foreground: rgb(8, 48, 160);
+  --sidebar-border: rgb(228, 231, 236);
+  --sidebar-ring: rgb(50, 128, 255);
+  --font-sans: Inter, sans-serif;
+  --font-serif: Source Serif 4, serif;
+  --font-mono: JetBrains Mono, monospace;
+  --radius: 1.15rem;
+  --shadow-x: 0;
+  --shadow-y: 1px;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.1;
+  --shadow-color: oklch(0 0 0);
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
 
-  .dark {
-    --background: rgb(15, 20, 25);
-    --foreground: rgb(229, 233, 238);
-    --card: rgb(22, 28, 36);
-    --card-foreground: rgb(229, 233, 238);
-    --popover: rgb(28, 35, 45);
-    --popover-foreground: rgb(229, 233, 238);
-    --primary: rgb(122, 176, 208);
-    --primary-foreground: rgb(15, 20, 25);
-    --secondary: rgb(30, 38, 48);
-    --secondary-foreground: rgb(229, 233, 238);
-    --muted: rgb(30, 38, 48);
-    --muted-foreground: rgb(133, 144, 160);
-    --accent: rgb(30, 38, 48);
-    --accent-foreground: rgb(168, 207, 227);
-    --destructive: rgb(220, 110, 105);
-    --destructive-foreground: rgb(22, 8, 7);
-    --border: rgb(40, 49, 61);
-    --input: rgb(40, 49, 61);
-    --ring: rgb(122, 176, 208);
-    --chart-1: rgb(122, 176, 208);
-    --chart-2: rgb(168, 207, 227);
-    --chart-3: rgb(91, 163, 204);
-    --chart-4: rgb(86, 173, 132);
-    --chart-5: rgb(232, 178, 92);
-    --sidebar: rgb(11, 15, 20);
-    --sidebar-foreground: rgb(229, 233, 238);
-    --sidebar-primary: rgb(122, 176, 208);
-    --sidebar-primary-foreground: rgb(15, 20, 25);
-    --sidebar-accent: rgb(30, 38, 48);
-    --sidebar-accent-foreground: rgb(168, 207, 227);
-    --sidebar-border: rgb(30, 38, 48);
-    --sidebar-ring: rgb(122, 176, 208);
-    --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-    --font-mono: "Bricolage Mono", ui-monospace, SF Mono, SF Mono-Regular, Consolas,
-      "Liberation Mono", Menlo, Courier, monospace;
-    --font-urdu: "Noto Nastaliq Urdu", serif;
-    --radius: 0.625rem;
-    --shadow-x: 0px;
-    --shadow-y: 1px;
-    --shadow-blur: 3px;
-    --shadow-spread: 0px;
-    --shadow-opacity: 0.3;
-    --shadow-color: #000000;
-    --shadow-2xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.15);
-    --shadow-xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.15);
-    --shadow-sm: 0px 1px 3px 0px hsl(0 0% 0% / 0.30), 0px 1px 2px -1px hsl(0 0% 0% / 0.30);
-    --shadow: 0px 1px 3px 0px hsl(0 0% 0% / 0.30), 0px 1px 2px -1px hsl(0 0% 0% / 0.30);
-    --shadow-md: 0px 1px 3px 0px hsl(0 0% 0% / 0.30), 0px 2px 4px -1px hsl(0 0% 0% / 0.30);
-    --shadow-lg: 0px 1px 3px 0px hsl(0 0% 0% / 0.30), 0px 4px 6px -1px hsl(0 0% 0% / 0.30);
-    --shadow-xl: 0px 1px 3px 0px hsl(0 0% 0% / 0.30), 0px 8px 10px -1px hsl(0 0% 0% / 0.30);
-    --shadow-2xl: 0px 1px 3px 0px hsl(0 0% 0% / 0.75);
+.dark {
+  --background: rgb(23, 23, 23);
+  --foreground: rgb(229, 229, 229);
+  --card: rgb(38, 38, 38);
+  --card-foreground: rgb(229, 229, 229);
+  --popover: rgb(38, 38, 38);
+  --popover-foreground: rgb(229, 229, 229);
+  --primary: rgb(50, 128, 255);
+  --primary-foreground: rgb(255, 255, 255);
+  --secondary: rgb(38, 38, 38);
+  --secondary-foreground: rgb(229, 229, 229);
+  --muted: rgb(31, 31, 31);
+  --muted-foreground: rgb(163, 163, 163);
+  --accent: rgb(43, 116, 233);
+  --accent-foreground: rgb(190, 219, 255);
+  --destructive: rgb(255, 52, 52);
+  --destructive-foreground: rgb(255, 255, 255);
+  --border: rgb(64, 64, 64);
+  --input: rgb(64, 64, 64);
+  --ring: rgb(50, 128, 255);
+  --chart-1: rgb(91, 164, 255);
+  --chart-2: rgb(50, 128, 255);
+  --chart-3: rgb(36, 105, 255);
+  --chart-4: rgb(50, 128, 255);
+  --chart-5: rgb(50, 128, 255);
+  --sidebar: rgb(23, 23, 23);
+  --sidebar-foreground: rgb(229, 229, 229);
+  --sidebar-primary: rgb(50, 128, 255);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(50, 128, 255);
+  --sidebar-accent-foreground: rgb(190, 219, 255);
+  --sidebar-border: rgb(64, 64, 64);
+  --sidebar-ring: rgb(50, 128, 255);
+  --font-sans: Inter, sans-serif;
+  --font-serif: Source Serif 4, serif;
+  --font-mono: JetBrains Mono, monospace;
+  --radius: 1.15rem;
+  --shadow-x: 0;
+  --shadow-y: 1px;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.1;
+  --shadow-color: oklch(0 0 0);
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
 }
 
 @theme inline {
@@ -146,10 +144,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-  --font-urdu: var(--font-urdu);
-  --font-serif: var(--font-serif);
+  --font-sans: var(--font-space-grotesk);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -170,13 +165,13 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    font-family: var(--font-space-grotesk), sans-serif;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-space-grotesk), sans-serif;
   }
-}
-
-@keyframes dots {
-  0%, 20% { content: "."; }
-  40%, 60% { content: ".."; }
-  80%, 100% { content: "..."; }
 }
