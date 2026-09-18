@@ -3,13 +3,20 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    name: "falcon",
-    description: "internship dashboard",
-    image: "/falcon.png",
-    url: "https://tryfalcon.io",
+    name: "StackAdapt",
+    description: "Internal Tools",
+    image: "/stackadapt.jpg",
+    url: "https://www.stackadapt.com",
+  },
+  {
+    name: "Whatcode",
+    description: "Personal Cloud Coding Agent",
+    image: "/github.jpg",
+    url: "https://www.whatcode.com",
   },
 ];
 
@@ -17,17 +24,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center p-6">
       <div className="max-w-md w-full py-12">
-        <div className="mb-16">
-          {/* <div className="flex items-center gap-3 mb-6">
-            <Image
-              className="rounded-full"
-              src="/budgie.png"
-              alt="budgie"
-              width={50}
-              height={50}
-            />
-          </div> */}
-
+        <div className="mb-10">
           <h1 className="text-4xl font-medium mb-2 text-balance">
             Muhammad Hamza
           </h1>
@@ -37,29 +34,29 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <Button className="rounded-full px-6">
-              <Link href="https://github.com/Muh-Hamza-99">GitHub</Link>
-            </Button>
-            <Button className="rounded-full px-6">
+            <Button className="rounded-full px-4">
               <Link href="https://www.linkedin.com/in/hamzaasad/">
                 LinkedIn
               </Link>
             </Button>
-            <Button className="rounded-full px-6">
+            <Button className="rounded-full px-4">
+              <Link href="https://github.com/Muh-Hamza-99">GitHub</Link>
+            </Button>
+            <Button className="rounded-full px-4">
               <Link href="https://muhhamza.substack.com/">Substack</Link>
             </Button>
           </div>
         </div>
 
-        {/* <div>
-          <h2 className="text-sm text-neutral-500 mb-8">works</h2>
+        <div>
+          <p className="text-muted-foreground mb-4">Recent</p>
           <div className="space-y-6">
             {projects.map((project) => (
               <Link
                 target="_blank"
                 key={project.name}
                 href={project.url}
-                className="flex items-start p-2 rounded-full gap-2 transition-all duration-300 hover:bg-white hover:shadow-sm"
+                className="group flex items-center p-2 rounded-full gap-3 transition-all duration-300 hover:shadow-secondary hover:shadow-lg"
               >
                 <Image
                   className="rounded-full"
@@ -68,7 +65,7 @@ export default function Home() {
                   width={50}
                   height={50}
                 />
-                <div className="flex-1 min-w-0">
+                <div className="flex-1">
                   <h3 className="font-medium text-neutral-900 mb-1">
                     {project.name}
                   </h3>
@@ -76,10 +73,11 @@ export default function Home() {
                     {project.description}
                   </p>
                 </div>
+                <ArrowRight className="size-8 text-primary group-hover:-rotate-45 group-hover:transition-all duration-300 mr-1" />
               </Link>
             ))}
           </div>
-        </div> */}
+        </div>
 
         <div className="mt-16 text-sm text-muted-foreground">
           <p>© 2026 Muhammad Hamza</p>
