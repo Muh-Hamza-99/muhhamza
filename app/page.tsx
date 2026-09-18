@@ -16,7 +16,7 @@ const projects = [
     name: "Whatcode",
     description: "Personal Cloud Coding Agent",
     image: "/github.jpg",
-    url: "https://www.whatcode.com",
+    url: "https://www.github.com/Muh-Hamza-99/whatcode",
   },
 ];
 
